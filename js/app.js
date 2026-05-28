@@ -203,7 +203,7 @@ function renderBook() {
   const warnHtml = GH.hasToken() ? "" : `<div class="hint" style="border-color:var(--danger); color:var(--danger)">Buchungs-Token nicht konfiguriert. Bitte Repository-Secret <code>MA_GITHUB_TOKEN</code> setzen und Pages neu deployen.</div>`;
   main.innerHTML = `
     <div class="card">
-      <h2>Hallo ${esc(state.profile.firstName)} 👋</h2>
+      <h2>Eingeloggt als ${esc(state.profile.firstName)} ${esc(state.profile.lastName)}</h2>
       <p class="muted">Wähle Materialien und Mengen. Mehrfachauswahl möglich.</p>
     </div>
     ${warnHtml}
