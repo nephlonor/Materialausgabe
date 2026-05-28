@@ -430,6 +430,26 @@
         "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
         "createdAt": "2026-05-28T23:43:12.902Z"
       }
+    },
+    {
+      "id": "mpq52k8eh0nurp",
+      "timestamp": "2026-05-28T23:43:26.702Z",
+      "action": "note-delete",
+      "bookingId": "mpq4zeeh22monp",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "id": "mpq529l274nshh",
+        "text": "north",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:43:12.902Z"
+      }
     }
   ]
 }
