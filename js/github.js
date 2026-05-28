@@ -21,6 +21,12 @@ const GH = {
   },
 
   async loadAll() {
+    // Wenn Token vorhanden: via API lesen (umgeht raw.githubusercontent CDN-Cache).
+    // Sonst Fallback auf raw (für anonymen Read ohne Token).
+    if (this.hasToken()) {
+      const { data } = await this._apiGet();
+      return data;
+    }
     const url = `https://raw.githubusercontent.com/${this.owner}/${this.repo}/${this.branch}/${this.path}?t=${Date.now()}`;
     const res = await fetch(url, { cache: "no-store" });
     if (res.status === 404) return { bookings: [] };
