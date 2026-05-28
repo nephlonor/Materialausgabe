@@ -49,8 +49,21 @@ function saveToken(t) {
   else localStorage.removeItem(LS.token);
 }
 
+function show(el, displayValue) {
+  if (typeof el === "string") el = document.getElementById(el);
+  if (!el) return;
+  el.hidden = false;
+  el.style.display = displayValue || "";
+}
+function hide(el) {
+  if (typeof el === "string") el = document.getElementById(el);
+  if (!el) return;
+  el.hidden = true;
+  el.style.display = "none";
+}
+
 function showApp() {
-  document.getElementById("tabs").hidden = false;
+  show("tabs", "flex");
 }
 
 function switchView(v) {
@@ -73,9 +86,9 @@ function toast(msg, kind) {
   const el = document.getElementById("toast");
   el.textContent = msg;
   el.className = "toast" + (kind ? " " + kind : "");
-  el.hidden = false;
+  show(el, "block");
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => { el.hidden = true; }, 3000);
+  toastTimer = setTimeout(() => { hide(el); }, 3000);
 }
 
 // Modal
@@ -91,8 +104,8 @@ function modal({ title, body, okText = "OK", cancelText = "Abbrechen", onOk }) {
     const cancelBtn = document.getElementById("modal-cancel");
     okBtn.textContent = okText;
     cancelBtn.textContent = cancelText;
-    m.hidden = false;
-    const close = (val) => { m.hidden = true; okBtn.onclick = null; cancelBtn.onclick = null; resolve(val); };
+    show(m, "flex");
+    const close = (val) => { hide(m); okBtn.onclick = null; cancelBtn.onclick = null; resolve(val); };
     okBtn.onclick = async () => {
       if (onOk) {
         const r = await onOk(b);
@@ -158,7 +171,7 @@ async function openSettings() {
     </div>
   `;
   wrap.querySelector("#s-edit-profile").onclick = () => {
-    document.getElementById("modal").hidden = true;
+    hide("modal");
     renderProfile(false);
   };
   wrap.querySelector("#s-logout").onclick = async () => {
@@ -167,8 +180,8 @@ async function openSettings() {
       localStorage.removeItem(LS.token);
       state.profile = null;
       state.token = null;
-      document.getElementById("modal").hidden = true;
-      document.getElementById("tabs").hidden = true;
+      hide("modal");
+      hide("tabs");
       renderProfile(true);
     }
   };
