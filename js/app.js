@@ -162,17 +162,18 @@ async function openSettings() {
   wrap.innerHTML = `
     <p class="muted" style="margin-top:0">Dein Gerät hat eine automatisch erzeugte ID. Buchungen von diesem Gerät kannst du bearbeiten.</p>
     <div class="hint">Geräte-ID: <code>${esc(state.deviceId || "—")}</code></div>
-    <div class="btn-row">
+    <div class="btn-row" style="flex-direction:column">
       <button id="s-edit-profile" class="btn block">Profil bearbeiten</button>
-      <button id="s-logout" class="btn danger block">Daten löschen</button>
+      <button id="s-logout" class="btn danger block">Gerät zurücksetzen und mit neuer ID verknüpfen</button>
     </div>
+    <p class="muted" style="font-size:12px;margin:8px 0 0">Bereits erfasste Buchungen bleiben erhalten, können jedoch nicht mehr angepasst werden.</p>
   `;
   wrap.querySelector("#s-edit-profile").onclick = () => {
     hide("modal");
     renderProfile(false);
   };
   wrap.querySelector("#s-logout").onclick = async () => {
-    if (confirm("Profil und Geräte-ID von diesem Gerät entfernen? Eigene Buchungen können danach nicht mehr bearbeitet werden.")) {
+    if (confirm("Gerät zurücksetzen und mit neuer ID verknüpfen? Bereits erfasste Buchungen bleiben erhalten, können jedoch nicht mehr angepasst werden.")) {
       localStorage.removeItem(LS.profile);
       localStorage.removeItem(LS.deviceId);
       state.profile = null;
@@ -205,6 +206,7 @@ function renderBook() {
     <div class="card">
       <h2>Eingeloggt als ${esc(state.profile.firstName)} ${esc(state.profile.lastName)}</h2>
       <p class="muted">Wähle Materialien und Mengen. Mehrfachauswahl möglich.</p>
+      <button id="guest-btn" class="btn block" style="margin-top:10px">Eine Gastbuchung tätigen</button>
     </div>
     ${warnHtml}
     ${groupsHtml}
@@ -215,6 +217,7 @@ function renderBook() {
   `;
   main.querySelectorAll(".qty-control").forEach(c => bindQty(c));
   document.getElementById("book-btn").onclick = submitBooking;
+  document.getElementById("guest-btn").onclick = submitGuestBooking;
   updateTotal();
 }
 
@@ -271,6 +274,90 @@ function updateTotal() {
   if (btn) btn.disabled = cartItemCount() === 0;
 }
 
+async function submitGuestBooking() {
+  if (cartItemCount() === 0) {
+    toast("Bitte zuerst Materialien wählen", "error");
+    return;
+  }
+  if (!GH.hasToken()) {
+    toast("Buchungs-Token fehlt – siehe Hinweis oben", "error");
+    return;
+  }
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
+    <p class="muted" style="margin-top:0">Daten des Gastes einmalig eingeben. Nach der Bestätigung kann die Buchung <b>nicht mehr angepasst</b> werden.</p>
+    <label class="field"><span>Vorname *</span><input id="g-first" type="text" autocomplete="off" /></label>
+    <label class="field"><span>Nachname *</span><input id="g-last" type="text" autocomplete="off" /></label>
+    <label class="field"><span>ID-Person *</span><input id="g-id" type="text" inputmode="numeric" autocomplete="off" /></label>
+    <label class="field"><span>E-Mail *</span><input id="g-email" type="email" autocomplete="off" /></label>
+    <label class="field"><span>Jahreskurs *</span><input id="g-kurs" type="text" autocomplete="off" /></label>
+  `;
+  const guest = {};
+  const ok = await modal({
+    title: "Gastbuchung – Daten",
+    body: wrap,
+    okText: "Weiter",
+    onOk: (root) => {
+      const data = {
+        firstName: root.querySelector("#g-first").value.trim(),
+        lastName: root.querySelector("#g-last").value.trim(),
+        idPerson: root.querySelector("#g-id").value.trim(),
+        email: root.querySelector("#g-email").value.trim(),
+        jahreskurs: root.querySelector("#g-kurs").value.trim(),
+      };
+      for (const k of Object.keys(data)) {
+        if (!data[k]) { toast("Bitte alle Felder ausfüllen", "error"); return false; }
+      }
+      if (!/^\S+@\S+\.\S+$/.test(data.email)) { toast("Ungültige E-Mail", "error"); return false; }
+      Object.assign(guest, data);
+    },
+  });
+  if (!ok) return;
+
+  const items = Object.entries(state.cart)
+    .filter(([, q]) => q > 0)
+    .map(([id, q]) => ({
+      materialId: id,
+      label: MATERIAL_INDEX[id].label,
+      group: MATERIAL_INDEX[id].group,
+      unitPrice: MATERIAL_INDEX[id].price,
+      qty: q,
+    }));
+  const total = cartTotal();
+  const summary = `
+    <p class="muted" style="margin-top:0">Gast: <b>${esc(guest.firstName)} ${esc(guest.lastName)}</b> · ID ${esc(guest.idPerson)} · ${esc(guest.jahreskurs)}</p>
+    <ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
+      ${items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} = ${formatCHF(i.qty * i.unitPrice)}</li>`).join("")}
+    </ul>
+    <div style="display:flex; justify-content:space-between; font-weight:600; padding-top:8px; border-top:1px solid var(--border)">
+      <span>Total</span><span>${formatCHF(total)}</span>
+    </div>
+    <p class="muted" style="font-size:12px; margin-top:10px">Gastbuchungen können nach Bestätigung nicht mehr bearbeitet werden.</p>`;
+  const confirmed = await modal({ title: "Gastbuchung bestätigen", body: summary, okText: "Buchen" });
+  if (!confirmed) return;
+
+  const booking = {
+    id: newId(),
+    deviceId: "guest",
+    guest: true,
+    createdAt: new Date().toISOString(),
+    ...guest,
+    items,
+    total,
+    notes: [],
+  };
+  try {
+    await GH.addBooking(booking);
+    toast("Gastbuchung gespeichert", "success");
+    state.cart = {};
+    await refreshBookings();
+    renderBook();
+  } catch (e) {
+    console.error(e);
+    toast("Fehler: " + e.message, "error");
+  }
+}
+
 async function submitBooking() {
   if (cartItemCount() === 0) return;
   if (!GH.hasToken()) {
@@ -313,6 +400,7 @@ async function submitBooking() {
     jahreskurs: state.profile.jahreskurs,
     items,
     total,
+    notes: [],
   };
   try {
     await GH.addBooking(booking);
@@ -361,15 +449,33 @@ function renderList() {
     return;
   }
   const sorted = [...state.bookings].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
-  list.innerHTML = sorted.map(b => bookingCardHtml(b)).join("");
+  list.innerHTML = sorted.map(b => bookingCardHtml(b, { clickToEdit: true })).join("");
+  bindBookingActions(list, { clickToEdit: true });
 }
 
 function bookingCardHtml(b, opts = {}) {
-  const own = b.deviceId && b.deviceId === state.deviceId;
+  const own = !b.guest && b.deviceId && b.deviceId === state.deviceId;
   const date = new Date(b.createdAt);
   const when = date.toLocaleString("de-CH", { dateStyle: "short", timeStyle: "short" });
+  const notes = Array.isArray(b.notes) ? b.notes : [];
+  const notesHtml = notes.length ? `
+    <div class="notes">
+      <div class="notes-title">Notizen</div>
+      ${notes.map(n => `
+        <div class="note">
+          <div class="note-text">${esc(n.text)}</div>
+          <div class="note-meta">— ${esc(n.author || "?")} · ${esc(new Date(n.createdAt).toLocaleString("de-CH", { dateStyle: "short", timeStyle: "short" }))}</div>
+        </div>
+      `).join("")}
+    </div>` : "";
+  const tags = [];
+  if (b.guest) tags.push(`<span class="tag tag-guest">Gast</span>`);
+  if (own) tags.push(`<span class="tag tag-own">Eigene</span>`);
+  const clickable = own && opts.clickToEdit;
   return `
-    <div class="booking-item ${own ? "own" : ""}">
+    <div class="booking-item ${own ? "own" : ""} ${b.guest ? "guest" : ""} ${clickable ? "clickable" : ""}"
+         ${clickable ? `data-direct-edit="${esc(b.id)}"` : ""}>
+      ${tags.length ? `<div class="tags">${tags.join("")}</div>` : ""}
       <div class="head">
         <span class="who">${esc(b.firstName)} ${esc(b.lastName)}</span>
         <span class="when">${esc(when)}</span>
@@ -378,16 +484,72 @@ function bookingCardHtml(b, opts = {}) {
       <ul>
         ${b.items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} <span class="muted">(${formatCHF(i.qty * i.unitPrice)})</span></li>`).join("")}
       </ul>
+      ${notesHtml}
       <div class="foot">
         <span class="sum">${formatCHF(b.total)}</span>
-        ${own && opts.withActions ? `
-          <div style="display:flex;gap:8px">
-            <button class="btn" data-edit="${b.id}">Bearbeiten</button>
-            <button class="btn danger" data-del="${b.id}">Löschen</button>
-          </div>` : ""}
+        <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">
+          <button class="btn small" data-note="${esc(b.id)}">Notiz +</button>
+          ${own && opts.withActions ? `
+            <button class="btn small" data-edit="${esc(b.id)}">Bearbeiten</button>
+            <button class="btn small danger" data-del="${esc(b.id)}">Löschen</button>` : ""}
+        </div>
       </div>
     </div>
   `;
+}
+
+function bindBookingActions(container, opts = {}) {
+  container.querySelectorAll("[data-note]").forEach(btn => {
+    btn.onclick = (e) => { e.stopPropagation(); addNoteToBooking(btn.dataset.note); };
+  });
+  container.querySelectorAll("[data-edit]").forEach(btn => {
+    btn.onclick = (e) => { e.stopPropagation(); editBooking(btn.dataset.edit); };
+  });
+  container.querySelectorAll("[data-del]").forEach(btn => {
+    btn.onclick = (e) => { e.stopPropagation(); deleteBooking(btn.dataset.del); };
+  });
+  if (opts.clickToEdit) {
+    container.querySelectorAll("[data-direct-edit]").forEach(card => {
+      card.onclick = () => editBooking(card.dataset.directEdit);
+    });
+  }
+}
+
+async function addNoteToBooking(id) {
+  const b = state.bookings.find(x => x.id === id);
+  if (!b) return;
+  if (!GH.hasToken()) { toast("Buchungs-Token fehlt", "error"); return; }
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
+    <p class="muted" style="margin-top:0">Notiz zu Buchung von <b>${esc(b.firstName)} ${esc(b.lastName)}</b> hinzufügen.</p>
+    <label class="field"><span>Text *</span><textarea id="n-text" rows="4" placeholder="Notiz …"></textarea></label>
+  `;
+  await modal({
+    title: "Notiz hinzufügen",
+    body: wrap,
+    okText: "Speichern",
+    onOk: async (root) => {
+      const text = root.querySelector("#n-text").value.trim();
+      if (!text) { toast("Notiz darf nicht leer sein", "error"); return false; }
+      const author = state.profile
+        ? `${state.profile.firstName} ${state.profile.lastName}`
+        : "Anonym";
+      const note = {
+        text,
+        author,
+        authorDeviceId: state.deviceId,
+        createdAt: new Date().toISOString(),
+      };
+      try {
+        await GH.addNote(id, note);
+        toast("Notiz gespeichert", "success");
+        await refreshBookings();
+      } catch (e) {
+        toast("Fehler: " + e.message, "error");
+        return false;
+      }
+    },
+  });
 }
 
 // ================= Edit =================
@@ -410,12 +572,7 @@ function renderEdit() {
     return;
   }
   list.innerHTML = own.map(b => bookingCardHtml(b, { withActions: true })).join("");
-  list.querySelectorAll("[data-edit]").forEach(btn => {
-    btn.onclick = () => editBooking(btn.dataset.edit);
-  });
-  list.querySelectorAll("[data-del]").forEach(btn => {
-    btn.onclick = () => deleteBooking(btn.dataset.del);
-  });
+  bindBookingActions(list);
 }
 
 async function editBooking(id) {

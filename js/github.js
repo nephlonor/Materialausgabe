@@ -121,4 +121,14 @@ const GH = {
       return data;
     }, `Buchung ${bookingId} gelöscht`);
   },
+
+  async addNote(bookingId, note) {
+    return await this._withRetry((data) => {
+      const i = data.bookings.findIndex(b => b.id === bookingId);
+      if (i === -1) throw new Error("Buchung nicht gefunden");
+      if (!Array.isArray(data.bookings[i].notes)) data.bookings[i].notes = [];
+      data.bookings[i].notes.push(note);
+      return data;
+    }, `Notiz zu Buchung ${bookingId}`);
+  },
 };
