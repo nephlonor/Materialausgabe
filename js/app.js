@@ -38,6 +38,39 @@ function loadLocal() {
   } catch {}
 }
 
+function currentActor() {
+  if (!state.profile) return { deviceId: state.deviceId || null };
+  return {
+    deviceId: state.deviceId,
+    firstName: state.profile.firstName,
+    lastName: state.profile.lastName,
+    idPerson: state.profile.idPerson,
+    email: state.profile.email,
+  };
+}
+
+async function exportAuditLog() {
+  try {
+    const data = await GH.loadAudit();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `audit-log-${new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-")}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast(`${(data.entries || []).length} Audit-Einträge exportiert`, "success");
+    return data;
+  } catch (e) {
+    console.error(e);
+    toast("Audit-Log Export fehlgeschlagen: " + e.message, "error");
+  }
+}
+window.exportAuditLog = exportAuditLog;
+window.loadAuditLog = () => GH.loadAudit();
+
 function ensureDeviceId() {
   if (state.deviceId) return;
   const id = (crypto.randomUUID && crypto.randomUUID()) ||
@@ -164,6 +197,7 @@ async function openSettings() {
     <div class="hint">Geräte-ID: <code>${esc(state.deviceId || "—")}</code></div>
     <div class="btn-row" style="flex-direction:column">
       <button id="s-edit-profile" class="btn block">Profil bearbeiten</button>
+      <button id="s-export-audit" class="btn block">Audit-Log exportieren</button>
       <button id="s-logout" class="btn danger block">Gerät zurücksetzen und mit neuer ID verknüpfen</button>
     </div>
     <p class="muted" style="font-size:12px;margin:8px 0 0">Bereits erfasste Buchungen bleiben erhalten, können jedoch nicht mehr angepasst werden.</p>
@@ -171,6 +205,9 @@ async function openSettings() {
   wrap.querySelector("#s-edit-profile").onclick = () => {
     hide("modal");
     renderProfile(false);
+  };
+  wrap.querySelector("#s-export-audit").onclick = () => {
+    exportAuditLog();
   };
   wrap.querySelector("#s-logout").onclick = async () => {
     if (confirm("Gerät zurücksetzen und mit neuer ID verknüpfen? Bereits erfasste Buchungen bleiben erhalten, können jedoch nicht mehr angepasst werden.")) {
@@ -347,7 +384,7 @@ async function submitGuestBooking() {
     notes: [],
   };
   try {
-    await GH.addBooking(booking);
+    await GH.addBooking(booking, currentActor());
     toast("Gastbuchung gespeichert", "success");
     state.cart = {};
     await refreshBookings();
@@ -403,7 +440,7 @@ async function submitBooking() {
     notes: [],
   };
   try {
-    await GH.addBooking(booking);
+    await GH.addBooking(booking, currentActor());
     toast("Buchung gespeichert", "success");
     state.cart = {};
     await refreshBookings();
@@ -541,7 +578,7 @@ async function addNoteToBooking(id) {
         createdAt: new Date().toISOString(),
       };
       try {
-        await GH.addNote(id, note);
+        await GH.addNote(id, note, currentActor());
         toast("Notiz gespeichert", "success");
         await refreshBookings();
       } catch (e) {
@@ -622,7 +659,7 @@ async function editBooking(id) {
       if (!newItems.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
       const newTotal = newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0);
       try {
-        await GH.updateBooking(id, state.deviceId, { items: newItems, total: newTotal });
+        await GH.updateBooking(id, state.deviceId, { items: newItems, total: newTotal }, currentActor());
         toast("Gespeichert", "success");
         await refreshBookings();
       } catch (e) {
@@ -641,7 +678,7 @@ async function deleteBooking(id) {
   });
   if (!ok) return;
   try {
-    await GH.deleteBooking(id, state.deviceId);
+    await GH.deleteBooking(id, state.deviceId, currentActor());
     toast("Gelöscht", "success");
     await refreshBookings();
   } catch (e) {
