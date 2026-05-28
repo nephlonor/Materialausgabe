@@ -4,8 +4,30 @@ const state = {
   deviceId: null,       // automatisch generierte ID pro Browser
   view: "book",         // book | list | edit
   cart: {},             // { materialId: qty }
+  paymentType: "privat",// "privat" | "institut"
   bookings: [],         // alle Buchungen vom Server
 };
+
+const PAYMENT_LABEL = { privat: "Privat", institut: "Institut" };
+
+function paymentToggleHtml(current, idPrefix = "pt") {
+  return `
+    <div class="toggle-group" role="tablist">
+      <button type="button" class="${current === "privat" ? "active" : ""}" data-pt="privat" id="${idPrefix}-privat">Privat</button>
+      <button type="button" class="${current === "institut" ? "active" : ""}" data-pt="institut" id="${idPrefix}-institut">Institut</button>
+    </div>
+  `;
+}
+
+function bindPaymentToggle(container, onChange) {
+  container.querySelectorAll(".toggle-group button[data-pt]").forEach(btn => {
+    btn.onclick = () => {
+      const group = btn.closest(".toggle-group");
+      group.querySelectorAll("button[data-pt]").forEach(b => b.classList.toggle("active", b === btn));
+      onChange(btn.dataset.pt);
+    };
+  });
+}
 
 const LS = {
   profile: "ma.profile.v1",
@@ -139,16 +161,23 @@ function modal({ title, body, okText = "OK", cancelText = "Abbrechen", onOk }) {
     const cancelBtn = document.getElementById("modal-cancel");
     okBtn.textContent = okText;
     cancelBtn.textContent = cancelText;
+    okBtn.disabled = false;
+    cancelBtn.disabled = false;
     show(m, "flex");
     const close = (val) => { hide(m); okBtn.onclick = null; cancelBtn.onclick = null; resolve(val); };
     okBtn.onclick = async () => {
+      if (okBtn.disabled) return;
+      okBtn.disabled = true;
+      cancelBtn.disabled = true;
       if (onOk) {
-        const r = await onOk(b);
-        if (r === false) return;
+        let r;
+        try { r = onOk(b); if (r && typeof r.then === "function") r = await r; }
+        catch (e) { okBtn.disabled = false; cancelBtn.disabled = false; throw e; }
+        if (r === false) { okBtn.disabled = false; cancelBtn.disabled = false; return; }
       }
       close(true);
     };
-    cancelBtn.onclick = () => close(false);
+    cancelBtn.onclick = () => { if (!cancelBtn.disabled) close(false); };
   });
 }
 
@@ -248,11 +277,16 @@ function renderBook() {
     ${warnHtml}
     ${groupsHtml}
     <div class="summary-bar">
+      <div class="payment-row">
+        <span class="lbl">Bezahlt durch</span>
+        ${paymentToggleHtml(state.paymentType, "pt-cart")}
+      </div>
       <div class="total"><span class="lbl">Total</span><span id="total" class="val">${formatCHF(0)}</span></div>
       <button id="book-btn" class="btn primary block" disabled>Buchen</button>
     </div>
   `;
   main.querySelectorAll(".qty-control").forEach(c => bindQty(c));
+  bindPaymentToggle(main, (pt) => { state.paymentType = pt; });
   document.getElementById("book-btn").onclick = submitBooking;
   document.getElementById("guest-btn").onclick = submitGuestBooking;
   updateTotal();
@@ -361,16 +395,23 @@ async function submitGuestBooking() {
       qty: q,
     }));
   const total = cartTotal();
-  const summary = `
+  let guestPaymentType = state.paymentType;
+  const confirmWrap = document.createElement("div");
+  confirmWrap.innerHTML = `
     <p class="muted" style="margin-top:0">Gast: <b>${esc(guest.firstName)} ${esc(guest.lastName)}</b> · ID ${esc(guest.idPerson)} · ${esc(guest.jahreskurs)}</p>
     <ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
       ${items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} = ${formatCHF(i.qty * i.unitPrice)}</li>`).join("")}
     </ul>
+    <div class="payment-row" style="margin:10px 0; padding-top:10px; border-top:1px solid var(--border)">
+      <span class="lbl">Bezahlt durch</span>
+      ${paymentToggleHtml(guestPaymentType, "pt-guest-confirm")}
+    </div>
     <div style="display:flex; justify-content:space-between; font-weight:600; padding-top:8px; border-top:1px solid var(--border)">
       <span>Total</span><span>${formatCHF(total)}</span>
     </div>
     <p class="muted" style="font-size:12px; margin-top:10px">Gastbuchungen können nach Bestätigung nicht mehr bearbeitet werden.</p>`;
-  const confirmed = await modal({ title: "Gastbuchung bestätigen", body: summary, okText: "Buchen" });
+  bindPaymentToggle(confirmWrap, (pt) => { guestPaymentType = pt; });
+  const confirmed = await modal({ title: "Gastbuchung bestätigen", body: confirmWrap, okText: "Buchen" });
   if (!confirmed) return;
 
   const booking = {
@@ -379,6 +420,7 @@ async function submitGuestBooking() {
     guest: true,
     createdAt: new Date().toISOString(),
     ...guest,
+    paymentType: guestPaymentType,
     items,
     total,
     notes: [],
@@ -412,14 +454,20 @@ async function submitBooking() {
     }));
   const total = cartTotal();
 
-  const summary = `
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
     <ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
       ${items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} = ${formatCHF(i.qty * i.unitPrice)}</li>`).join("")}
     </ul>
+    <div class="payment-row" style="margin:10px 0; padding-top:10px; border-top:1px solid var(--border)">
+      <span class="lbl">Bezahlt durch</span>
+      ${paymentToggleHtml(state.paymentType, "pt-confirm")}
+    </div>
     <div style="display:flex; justify-content:space-between; font-weight:600; padding-top:8px; border-top:1px solid var(--border)">
       <span>Total</span><span>${formatCHF(total)}</span>
     </div>`;
-  const ok = await modal({ title: "Buchung bestätigen", body: summary, okText: "Buchen" });
+  bindPaymentToggle(wrap, (pt) => { state.paymentType = pt; });
+  const ok = await modal({ title: "Buchung bestätigen", body: wrap, okText: "Buchen" });
   if (!ok) return;
 
   const btn = document.getElementById("book-btn");
@@ -435,6 +483,7 @@ async function submitBooking() {
     idPerson: state.profile.idPerson,
     email: state.profile.email,
     jahreskurs: state.profile.jahreskurs,
+    paymentType: state.paymentType,
     items,
     total,
     notes: [],
@@ -473,6 +522,7 @@ function renderList() {
       <div><b>${state.bookings.length}</b> <span class="muted">Buchungen gesamt</span></div>
       <button id="reload" class="btn">Neu laden</button>
     </div>
+    ${perPersonSummaryHtml()}
     <div id="list" class="booking-list"></div>
   `;
   document.getElementById("reload").onclick = async () => {
@@ -488,6 +538,44 @@ function renderList() {
   const sorted = [...state.bookings].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   list.innerHTML = sorted.map(b => bookingCardHtml(b, { clickToEdit: true })).join("");
   bindBookingActions(list, { clickToEdit: true });
+}
+
+function perPersonSummaryHtml() {
+  if (!state.bookings.length) return "";
+  const groups = new Map();
+  for (const b of state.bookings) {
+    const key = `${b.idPerson || "?"}|${b.firstName || ""} ${b.lastName || ""}`;
+    if (!groups.has(key)) {
+      groups.set(key, {
+        idPerson: b.idPerson || "?",
+        name: `${b.firstName || ""} ${b.lastName || ""}`.trim() || "—",
+        privat: 0, institut: 0, count: 0,
+      });
+    }
+    const g = groups.get(key);
+    const pt = b.paymentType === "institut" ? "institut" : "privat";
+    g[pt] += Number(b.total) || 0;
+    g.count++;
+  }
+  const sorted = [...groups.values()].sort((a, b) => a.name.localeCompare(b.name));
+  const totals = sorted.reduce((acc, g) => ({ privat: acc.privat + g.privat, institut: acc.institut + g.institut }), { privat: 0, institut: 0 });
+  return `
+    <details class="card per-person">
+      <summary><b>Übersicht pro Person</b> <span class="muted">— Privat ${formatCHF(totals.privat)} · Institut ${formatCHF(totals.institut)}</span></summary>
+      <table class="pp-table">
+        <thead><tr><th>Person</th><th>Privat</th><th>Institut</th></tr></thead>
+        <tbody>
+          ${sorted.map(g => `
+            <tr>
+              <td><div class="pp-name">${esc(g.name)}</div><div class="pp-id">ID ${esc(g.idPerson)} · ${g.count} Buchung${g.count === 1 ? "" : "en"}</div></td>
+              <td class="num">${formatCHF(g.privat)}</td>
+              <td class="num">${formatCHF(g.institut)}</td>
+            </tr>
+          `).join("")}
+        </tbody>
+      </table>
+    </details>
+  `;
 }
 
 function bookingCardHtml(b, opts = {}) {
@@ -513,6 +601,8 @@ function bookingCardHtml(b, opts = {}) {
   const tags = [];
   if (b.guest) tags.push(`<span class="tag tag-guest">Gast</span>`);
   if (own) tags.push(`<span class="tag tag-own">Eigene</span>`);
+  const pt = b.paymentType || "privat";
+  tags.push(`<span class="tag tag-pt tag-pt-${pt}">${esc(PAYMENT_LABEL[pt] || pt)}</span>`);
   const clickable = own && opts.clickToEdit;
   return `
     <div class="booking-item ${own ? "own" : ""} ${b.guest ? "guest" : ""} ${clickable ? "clickable" : ""}"
@@ -643,6 +733,7 @@ function renderEdit() {
 async function editBooking(id) {
   const b = state.bookings.find(x => x.id === id);
   if (!b) return;
+  let editedPaymentType = b.paymentType || "privat";
   const wrap = document.createElement("div");
   wrap.innerHTML = `<p class="muted" style="margin-top:0">Mengen anpassen (0 = entfernen)</p>` +
     b.items.map((it, i) => `
@@ -657,7 +748,11 @@ async function editBooking(id) {
           <button data-act="inc" data-i="${i}">+</button>
         </div>
       </div>
-    `).join("");
+    `).join("") +
+    `<div class="payment-row" style="margin-top:10px">
+       <span class="lbl">Bezahlt durch</span>
+       ${paymentToggleHtml(editedPaymentType, "pt-edit")}
+     </div>`;
 
   const newQtys = b.items.map(i => i.qty);
   const refreshInputs = () => {
@@ -675,6 +770,7 @@ async function editBooking(id) {
   wrap.querySelectorAll("input[data-i]").forEach(inp => {
     inp.oninput = () => { newQtys[+inp.dataset.i] = Math.max(0, parseInt(inp.value || "0", 10)); };
   });
+  bindPaymentToggle(wrap, (pt) => { editedPaymentType = pt; });
 
   let patch = null;
   const ok = await modal({
@@ -686,7 +782,11 @@ async function editBooking(id) {
         .map((it, i) => ({ ...it, qty: newQtys[i] }))
         .filter(it => it.qty > 0);
       if (!newItems.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
-      patch = { items: newItems, total: newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0) };
+      patch = {
+        items: newItems,
+        total: newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0),
+        paymentType: editedPaymentType,
+      };
     },
   });
   if (!ok || !patch) return;

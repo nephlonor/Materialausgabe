@@ -302,6 +302,81 @@ input:focus, select:focus, textarea:focus {
 }
 .tag-own { background: rgba(79,140,255,0.15); color: var(--accent); }
 .tag-guest { background: rgba(210,153,34,0.15); color: var(--warning); }
+.tag-pt-privat { background: rgba(139,148,158,0.18); color: var(--text-dim); }
+.tag-pt-institut { background: rgba(63,185,80,0.18); color: var(--success); }
+
+.toggle-group {
+  display: inline-flex;
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 3px;
+  gap: 2px;
+}
+.toggle-group button {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: calc(var(--radius-sm) - 3px);
+  cursor: pointer;
+  font-family: inherit;
+}
+.toggle-group button.active {
+  background: var(--accent);
+  color: #fff;
+}
+.toggle-group button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.payment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.payment-row .lbl { color: var(--text-dim); font-size: 13px; }
+
+.per-person summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+.per-person summary::-webkit-details-marker { display: none; }
+.per-person summary::after {
+  content: "▾";
+  float: right;
+  color: var(--text-dim);
+  transition: transform 0.2s;
+}
+.per-person[open] summary::after { transform: rotate(180deg); }
+.pp-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 13px;
+}
+.pp-table th, .pp-table td {
+  text-align: left;
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--border);
+}
+.pp-table th {
+  color: var(--text-dim);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.pp-table td.num, .pp-table th:nth-child(2), .pp-table th:nth-child(3) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.pp-name { font-weight: 600; }
+.pp-id { font-size: 11px; color: var(--text-dim); }
 
 .notes {
   margin-top: 10px;
