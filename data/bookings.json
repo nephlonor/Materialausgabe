@@ -33,6 +33,26 @@
         }
       ],
       "total": 32.9
+    },
+    {
+      "id": "mppo9mimw46b57",
+      "deviceId": "5bd5b0ee-cafa-4c1b-b818-961a373029bb",
+      "createdAt": "2026-05-28T15:53:02.782Z",
+      "firstName": "Florian",
+      "lastName": "Bertram",
+      "idPerson": "123456789",
+      "email": "florian.bertram@fhnw.ch",
+      "jahreskurs": "Test",
+      "items": [
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 10
+        }
+      ],
+      "total": 31
     }
   ]
 }
