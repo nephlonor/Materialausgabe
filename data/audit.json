@@ -135,6 +135,25 @@
         "total": 8.4,
         "notes": []
       }
+    },
+    {
+      "id": "mpq4wgqg69gau7",
+      "timestamp": "2026-05-28T23:38:42.232Z",
+      "action": "note",
+      "bookingId": "mpq4w1ttpkcwvb",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "text": "test",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:38:39.259Z"
+      }
     }
   ]
 }
