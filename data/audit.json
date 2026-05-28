@@ -154,6 +154,40 @@
         "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
         "createdAt": "2026-05-28T23:38:39.259Z"
       }
+    },
+    {
+      "id": "mpq4xdma0ss81s",
+      "timestamp": "2026-05-28T23:39:24.850Z",
+      "action": "create",
+      "bookingId": "mpq4xccd7kaix6",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpq4xccd7kaix6",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:39:23.197Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "items": [
+          {
+            "materialId": "gk-80x55-1.0",
+            "label": "1 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 1.5,
+            "qty": 1
+          }
+        ],
+        "total": 1.5,
+        "notes": []
+      }
     }
   ]
 }
