@@ -113,7 +113,15 @@
           "qty": 1
         }
       ],
-      "total": 12.95
+      "total": 12.95,
+      "notes": [
+        {
+          "text": "test",
+          "author": "Florian Bertram",
+          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+          "createdAt": "2026-05-28T23:33:10.960Z"
+        }
+      ]
     }
   ]
 }
