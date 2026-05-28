@@ -37,6 +37,25 @@
         "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
         "createdAt": "2026-05-28T23:32:36.853Z"
       }
+    },
+    {
+      "id": "mpq4ouy2dergxq",
+      "timestamp": "2026-05-28T23:32:47.402Z",
+      "action": "note",
+      "bookingId": "mppo9mimw46b57",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "text": "bereits abgebucht (test)",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:32:38.289Z"
+      }
     }
   ]
 }
