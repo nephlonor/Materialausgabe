@@ -175,7 +175,15 @@
         }
       ],
       "total": 23.299999999999997,
-      "notes": []
+      "notes": [
+        {
+          "id": "mpq5kpn7nbfcn2",
+          "text": "bezahlt",
+          "author": "Florian Bertram",
+          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+          "createdAt": "2026-05-28T23:57:33.523Z"
+        }
+      ]
     },
     {
       "id": "mpq5gykiyda9pt",
