@@ -22,7 +22,7 @@
           "label": "2.5 mm",
           "group": "GK / Graukarton (80 × 55 cm)",
           "unitPrice": 2.9,
-          "qty": 1
+          "qty": 2
         },
         {
           "materialId": "gk-80x110-2.5",
@@ -32,8 +32,8 @@
           "qty": 4
         }
       ],
-      "total": 27.799999999999997,
-      "updatedAt": "2026-05-28T15:54:29.743Z"
+      "total": 30.7,
+      "updatedAt": "2026-05-28T17:23:31.225Z"
     },
     {
       "id": "mppo9mimw46b57",
