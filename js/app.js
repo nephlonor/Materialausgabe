@@ -1,21 +1,21 @@
 // State
 const state = {
   profile: null,        // { firstName, lastName, idPerson, email, jahreskurs }
-  token: null,          // GitHub PAT
+  deviceId: null,       // automatisch generierte ID pro Browser
   view: "book",         // book | list | edit
   cart: {},             // { materialId: qty }
   bookings: [],         // alle Buchungen vom Server
-  loading: false,
 };
 
 const LS = {
   profile: "ma.profile.v1",
-  token: "ma.token.v1",
+  deviceId: "ma.deviceId.v1",
 };
 
 // Boot
 document.addEventListener("DOMContentLoaded", () => {
   loadLocal();
+  ensureDeviceId();
   document.getElementById("settings-btn").addEventListener("click", openSettings);
   document.querySelectorAll(".tab").forEach(t => {
     t.addEventListener("click", () => switchView(t.dataset.view));
@@ -33,20 +33,22 @@ function loadLocal() {
   try {
     const p = localStorage.getItem(LS.profile);
     if (p) state.profile = JSON.parse(p);
-    const t = localStorage.getItem(LS.token);
-    if (t) state.token = t;
+    const d = localStorage.getItem(LS.deviceId);
+    if (d) state.deviceId = d;
   } catch {}
+}
+
+function ensureDeviceId() {
+  if (state.deviceId) return;
+  const id = (crypto.randomUUID && crypto.randomUUID()) ||
+    (Date.now().toString(36) + Math.random().toString(36).slice(2, 12));
+  localStorage.setItem(LS.deviceId, id);
+  state.deviceId = id;
 }
 
 function saveProfile(p) {
   state.profile = p;
   localStorage.setItem(LS.profile, JSON.stringify(p));
-}
-
-function saveToken(t) {
-  state.token = t;
-  if (t) localStorage.setItem(LS.token, t);
-  else localStorage.removeItem(LS.token);
 }
 
 function show(el, displayValue) {
@@ -158,16 +160,11 @@ function renderProfile(initial) {
 async function openSettings() {
   const wrap = document.createElement("div");
   wrap.innerHTML = `
-    <p class="muted" style="margin-top:0">GitHub Personal Access Token zum Speichern von Buchungen. Wird nur lokal auf deinem Gerät abgelegt.</p>
-    <div class="hint">
-      Erstelle einen <b>Fine-grained PAT</b> mit Zugriff auf das Repo <code>${GH.owner}/${GH.repo}</code> und der Berechtigung <code>Contents: Read and write</code>.
-    </div>
-    <label class="field"><span>GitHub Token</span>
-      <input id="s-token" type="password" placeholder="github_pat_..." value="${esc(state.token || "")}" />
-    </label>
+    <p class="muted" style="margin-top:0">Dein Gerät hat eine automatisch erzeugte ID. Buchungen von diesem Gerät kannst du bearbeiten.</p>
+    <div class="hint">Geräte-ID: <code>${esc(state.deviceId || "—")}</code></div>
     <div class="btn-row">
       <button id="s-edit-profile" class="btn block">Profil bearbeiten</button>
-      <button id="s-logout" class="btn danger block">Abmelden</button>
+      <button id="s-logout" class="btn danger block">Daten löschen</button>
     </div>
   `;
   wrap.querySelector("#s-edit-profile").onclick = () => {
@@ -175,11 +172,11 @@ async function openSettings() {
     renderProfile(false);
   };
   wrap.querySelector("#s-logout").onclick = async () => {
-    if (confirm("Profil und Token von diesem Gerät entfernen?")) {
+    if (confirm("Profil und Geräte-ID von diesem Gerät entfernen? Eigene Buchungen können danach nicht mehr bearbeitet werden.")) {
       localStorage.removeItem(LS.profile);
-      localStorage.removeItem(LS.token);
+      localStorage.removeItem(LS.deviceId);
       state.profile = null;
-      state.token = null;
+      state.deviceId = null;
       hide("modal");
       hide("tabs");
       renderProfile(true);
@@ -188,16 +185,8 @@ async function openSettings() {
   await modal({
     title: "Einstellungen",
     body: wrap,
-    okText: "Token speichern",
-    onOk: async (root) => {
-      const t = root.querySelector("#s-token").value.trim();
-      if (!t) { saveToken(null); toast("Token entfernt"); return; }
-      toast("Token wird geprüft …");
-      const ok = await GH.verifyToken(t);
-      if (!ok) { toast("Token ungültig", "error"); return false; }
-      saveToken(t);
-      toast("Token gespeichert", "success");
-    },
+    okText: "Schliessen",
+    cancelText: "Abbrechen",
   });
 }
 
@@ -211,11 +200,13 @@ function renderBook() {
       ${g.items.map(it => renderMaterialRow(it)).join("")}
     </details>
   `).join("");
+  const warnHtml = GH.hasToken() ? "" : `<div class="hint" style="border-color:var(--danger); color:var(--danger)">Buchungs-Token nicht konfiguriert. Bitte Repository-Secret <code>MA_GITHUB_TOKEN</code> setzen und Pages neu deployen.</div>`;
   main.innerHTML = `
     <div class="card">
       <h2>Hallo ${esc(state.profile.firstName)} 👋</h2>
       <p class="muted">Wähle Materialien und Mengen. Mehrfachauswahl möglich.</p>
     </div>
+    ${warnHtml}
     ${groupsHtml}
     <div class="summary-bar">
       <div class="total"><span class="lbl">Total</span><span id="total" class="val">${formatCHF(0)}</span></div>
@@ -282,9 +273,8 @@ function updateTotal() {
 
 async function submitBooking() {
   if (cartItemCount() === 0) return;
-  if (!state.token) {
-    toast("Bitte zuerst GitHub-Token in den Einstellungen hinterlegen", "error");
-    openSettings();
+  if (!GH.hasToken()) {
+    toast("Buchungs-Token fehlt – siehe Hinweis oben", "error");
     return;
   }
   const items = Object.entries(state.cart)
@@ -314,6 +304,7 @@ async function submitBooking() {
 
   const booking = {
     id: newId(),
+    deviceId: state.deviceId,
     createdAt: new Date().toISOString(),
     firstName: state.profile.firstName,
     lastName: state.profile.lastName,
@@ -324,7 +315,7 @@ async function submitBooking() {
     total,
   };
   try {
-    await GH.addBooking(state.token, booking);
+    await GH.addBooking(booking);
     toast("Buchung gespeichert", "success");
     state.cart = {};
     await refreshBookings();
@@ -374,7 +365,7 @@ function renderList() {
 }
 
 function bookingCardHtml(b, opts = {}) {
-  const own = b.idPerson === state.profile.idPerson;
+  const own = b.deviceId && b.deviceId === state.deviceId;
   const date = new Date(b.createdAt);
   const when = date.toLocaleString("de-CH", { dateStyle: "short", timeStyle: "short" });
   return `
@@ -404,12 +395,12 @@ function renderEdit() {
   document.getElementById("page-title").textContent = "Buchungen anpassen";
   const main = document.getElementById("main");
   const own = state.bookings
-    .filter(b => b.idPerson === state.profile.idPerson)
+    .filter(b => b.deviceId && b.deviceId === state.deviceId)
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   main.innerHTML = `
     <div class="card">
       <h2>Deine Buchungen</h2>
-      <p class="muted">Nur eigene Buchungen können angepasst werden. Sortiert nach Datum.</p>
+      <p class="muted">Nur Buchungen von diesem Gerät können angepasst werden. Sortiert nach Datum.</p>
     </div>
     <div id="own-list" class="booking-list"></div>
   `;
@@ -463,7 +454,7 @@ async function editBooking(id) {
     inp.oninput = () => { newQtys[+inp.dataset.i] = Math.max(0, parseInt(inp.value || "0", 10)); };
   });
 
-  const ok = await modal({
+  await modal({
     title: "Buchung anpassen",
     body: wrap,
     okText: "Speichern",
@@ -474,7 +465,7 @@ async function editBooking(id) {
       if (!newItems.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
       const newTotal = newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0);
       try {
-        await GH.updateBooking(state.token, id, state.profile.idPerson, { items: newItems, total: newTotal });
+        await GH.updateBooking(id, state.deviceId, { items: newItems, total: newTotal });
         toast("Gespeichert", "success");
         await refreshBookings();
       } catch (e) {
@@ -493,7 +484,7 @@ async function deleteBooking(id) {
   });
   if (!ok) return;
   try {
-    await GH.deleteBooking(state.token, id, state.profile.idPerson);
+    await GH.deleteBooking(id, state.deviceId);
     toast("Gelöscht", "success");
     await refreshBookings();
   } catch (e) {

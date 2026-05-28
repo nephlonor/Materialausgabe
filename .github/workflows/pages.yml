@@ -22,6 +22,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Inject GitHub token into config
+        env:
+          MA_GITHUB_TOKEN: ${{ secrets.MA_GITHUB_TOKEN }}
+        run: |
+          if [ -z "$MA_GITHUB_TOKEN" ]; then
+            echo "::warning::MA_GITHUB_TOKEN secret is not set – bookings will not work."
+          fi
+          python3 -c "
+          import os, pathlib
+          p = pathlib.Path('js/config.js')
+          p.write_text(p.read_text().replace('__MA_TOKEN__', os.environ.get('MA_GITHUB_TOKEN', '')))
+          "
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -17,11 +17,17 @@ Buchungen werden als JSON-Datei (`data/bookings.json`) im Repository gespeichert
 1. **Repo public** machen (damit der anonyme Lese-Zugriff via `raw.githubusercontent.com` funktioniert).
 2. **GitHub Pages** aktivieren: Settings → Pages → Source: *GitHub Actions*.
 3. Auf `main` pushen — der Workflow `.github/workflows/pages.yml` deployed automatisch.
-4. Jeder Student braucht einen **Fine-grained Personal Access Token**:
-   - https://github.com/settings/personal-access-tokens
-   - Repository access: `nephlonor/materialausgabe`
+4. **Einmalig** einen Fine-grained PAT erstellen und als Repository-Secret hinterlegen:
+   - https://github.com/settings/personal-access-tokens → neuer Token
+   - Repository access: nur `nephlonor/materialausgabe`
    - Permissions: **Contents: Read and write**
-   - Token in der App unter ⚙ → "GitHub Token" eintragen (wird nur lokal gespeichert).
+   - Den Token-String in Settings → Secrets and variables → Actions → New repository secret
+   - Name: `MA_GITHUB_TOKEN`, Value: der erzeugte PAT
+   - Danach den Pages-Workflow neu starten (Actions → "Deploy to GitHub Pages" → Run workflow)
+5. Studenten öffnen die Seite, geben ihr Profil ein und können sofort buchen — kein eigener Token nötig.
+   Jeder Browser bekommt eine automatisch generierte Geräte-ID (in `localStorage`); damit werden „eigene" Buchungen identifiziert.
+
+> **Hinweis zur Sicherheit:** Der Token wird beim Build in das deployte JS injiziert und ist im Browser einsehbar. Das Repo wird nicht damit kontaminiert (Secret-Scanning bleibt sauber), aber jeder der die Seite besucht, könnte den Token aus dem DevTools extrahieren und damit `data/bookings.json` direkt manipulieren. Token regelmässig rotieren oder bei Bedarf widerrufen.
 
 ## Struktur
 
