@@ -814,6 +814,26 @@
         "total": 14.899999999999999,
         "notes": []
       }
+    },
+    {
+      "id": "mpq5kqme27lbpp",
+      "timestamp": "2026-05-28T23:57:34.790Z",
+      "action": "note",
+      "bookingId": "mpq5gl8wzkpl3v",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "id": "mpq5kpn7nbfcn2",
+        "text": "bezahlt",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:57:33.523Z"
+      }
     }
   ]
 }
