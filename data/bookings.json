@@ -147,6 +147,35 @@
       ],
       "total": 10.2,
       "notes": []
+    },
+    {
+      "id": "mpq5gl8wzkpl3v",
+      "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+      "createdAt": "2026-05-28T23:54:21.200Z",
+      "firstName": "Florian",
+      "lastName": "Bertram",
+      "idPerson": "123456789",
+      "email": "florian.bertram@fhnw.ch",
+      "jahreskurs": "Test",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x110-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 5.1,
+          "qty": 4
+        }
+      ],
+      "total": 23.299999999999997,
+      "notes": []
     }
   ]
 }
