@@ -191,7 +191,15 @@
         }
       ],
       "total": 4.8,
-      "notes": []
+      "notes": [
+        {
+          "id": "mpq52q5qr2xrjv",
+          "text": "test 2",
+          "author": "Florian Bertram",
+          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+          "createdAt": "2026-05-28T23:43:34.382Z"
+        }
+      ]
     }
   ]
 }
