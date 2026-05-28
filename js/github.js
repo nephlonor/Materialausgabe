@@ -188,6 +188,31 @@ const GH = {
     return result;
   },
 
+  async deleteNote(bookingId, noteId, deviceId, actor) {
+    let removed = null;
+    const result = await this._withRetry((data) => {
+      const i = data.bookings.findIndex(b => b.id === bookingId);
+      if (i === -1) throw new Error("Buchung nicht gefunden");
+      const notes = Array.isArray(data.bookings[i].notes) ? data.bookings[i].notes : [];
+      const j = notes.findIndex(n => n.id === noteId);
+      if (j === -1) throw new Error("Notiz nicht gefunden");
+      if (notes[j].authorDeviceId !== deviceId) throw new Error("Keine Berechtigung");
+      removed = JSON.parse(JSON.stringify(notes[j]));
+      notes.splice(j, 1);
+      data.bookings[i].notes = notes;
+      return data;
+    }, `Notiz ${noteId} gelöscht`);
+    await this._writeAudit({
+      id: this._auditId(),
+      timestamp: new Date().toISOString(),
+      action: "note-delete",
+      bookingId,
+      actor: actor || null,
+      note: removed,
+    });
+    return result;
+  },
+
   async addNote(bookingId, note, actor) {
     const result = await this._withRetry((data) => {
       const i = data.bookings.findIndex(b => b.id === bookingId);

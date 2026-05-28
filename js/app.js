@@ -498,12 +498,17 @@ function bookingCardHtml(b, opts = {}) {
   const notesHtml = notes.length ? `
     <div class="notes">
       <div class="notes-title">Notizen</div>
-      ${notes.map(n => `
+      ${notes.map(n => {
+        const ownNote = n.authorDeviceId && n.authorDeviceId === state.deviceId && n.id;
+        return `
         <div class="note">
           <div class="note-text">${esc(n.text)}</div>
-          <div class="note-meta">— ${esc(n.author || "?")} · ${esc(new Date(n.createdAt).toLocaleString("de-CH", { dateStyle: "short", timeStyle: "short" }))}</div>
-        </div>
-      `).join("")}
+          <div class="note-foot">
+            <span class="note-meta">— ${esc(n.author || "?")} · ${esc(new Date(n.createdAt).toLocaleString("de-CH", { dateStyle: "short", timeStyle: "short" }))}</span>
+            ${ownNote ? `<button class="note-del" title="Notiz löschen" data-del-note="${esc(b.id)}|${esc(n.id)}">×</button>` : ""}
+          </div>
+        </div>`;
+      }).join("")}
     </div>` : "";
   const tags = [];
   if (b.guest) tags.push(`<span class="tag tag-guest">Gast</span>`);
@@ -545,6 +550,13 @@ function bindBookingActions(container, opts = {}) {
   container.querySelectorAll("[data-del]").forEach(btn => {
     btn.onclick = (e) => { e.stopPropagation(); deleteBooking(btn.dataset.del); };
   });
+  container.querySelectorAll("[data-del-note]").forEach(btn => {
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      const [bid, nid] = btn.dataset.delNote.split("|");
+      deleteNoteFromBooking(bid, nid);
+    };
+  });
   if (opts.clickToEdit) {
     container.querySelectorAll("[data-direct-edit]").forEach(card => {
       card.onclick = () => editBooking(card.dataset.directEdit);
@@ -561,32 +573,48 @@ async function addNoteToBooking(id) {
     <p class="muted" style="margin-top:0">Notiz zu Buchung von <b>${esc(b.firstName)} ${esc(b.lastName)}</b> hinzufügen.</p>
     <label class="field"><span>Text *</span><textarea id="n-text" rows="4" placeholder="Notiz …"></textarea></label>
   `;
-  await modal({
+  let text = null;
+  const ok = await modal({
     title: "Notiz hinzufügen",
     body: wrap,
     okText: "Speichern",
-    onOk: async (root) => {
-      const text = root.querySelector("#n-text").value.trim();
-      if (!text) { toast("Notiz darf nicht leer sein", "error"); return false; }
-      const author = state.profile
-        ? `${state.profile.firstName} ${state.profile.lastName}`
-        : "Anonym";
-      const note = {
-        text,
-        author,
-        authorDeviceId: state.deviceId,
-        createdAt: new Date().toISOString(),
-      };
-      try {
-        await GH.addNote(id, note, currentActor());
-        toast("Notiz gespeichert", "success");
-        await refreshBookings();
-      } catch (e) {
-        toast("Fehler: " + e.message, "error");
-        return false;
-      }
+    onOk: (root) => {
+      const t = root.querySelector("#n-text").value.trim();
+      if (!t) { toast("Notiz darf nicht leer sein", "error"); return false; }
+      text = t;
     },
   });
+  if (!ok || !text) return;
+  const note = {
+    id: newId(),
+    text,
+    author: state.profile ? `${state.profile.firstName} ${state.profile.lastName}` : "Anonym",
+    authorDeviceId: state.deviceId,
+    createdAt: new Date().toISOString(),
+  };
+  try {
+    await GH.addNote(id, note, currentActor());
+    toast("Notiz gespeichert", "success");
+    await refreshBookings();
+  } catch (e) {
+    toast("Fehler: " + e.message, "error");
+  }
+}
+
+async function deleteNoteFromBooking(bookingId, noteId) {
+  const ok = await modal({
+    title: "Notiz löschen?",
+    body: "Diese Aktion kann nicht rückgängig gemacht werden.",
+    okText: "Löschen",
+  });
+  if (!ok) return;
+  try {
+    await GH.deleteNote(bookingId, noteId, state.deviceId, currentActor());
+    toast("Notiz gelöscht", "success");
+    await refreshBookings();
+  } catch (e) {
+    toast("Fehler: " + e.message, "error");
+  }
 }
 
 // ================= Edit =================
@@ -648,26 +676,27 @@ async function editBooking(id) {
     inp.oninput = () => { newQtys[+inp.dataset.i] = Math.max(0, parseInt(inp.value || "0", 10)); };
   });
 
-  await modal({
+  let patch = null;
+  const ok = await modal({
     title: "Buchung anpassen",
     body: wrap,
     okText: "Speichern",
-    onOk: async () => {
+    onOk: () => {
       const newItems = b.items
         .map((it, i) => ({ ...it, qty: newQtys[i] }))
         .filter(it => it.qty > 0);
       if (!newItems.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
-      const newTotal = newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0);
-      try {
-        await GH.updateBooking(id, state.deviceId, { items: newItems, total: newTotal }, currentActor());
-        toast("Gespeichert", "success");
-        await refreshBookings();
-      } catch (e) {
-        toast("Fehler: " + e.message, "error");
-        return false;
-      }
+      patch = { items: newItems, total: newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0) };
     },
   });
+  if (!ok || !patch) return;
+  try {
+    await GH.updateBooking(id, state.deviceId, patch, currentActor());
+    toast("Gespeichert", "success");
+    await refreshBookings();
+  } catch (e) {
+    toast("Fehler: " + e.message, "error");
+  }
 }
 
 async function deleteBooking(id) {

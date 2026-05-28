@@ -323,7 +323,27 @@ input:focus, select:focus, textarea:focus {
   margin-bottom: 6px;
 }
 .note-text { font-size: 13px; white-space: pre-wrap; word-break: break-word; }
-.note-meta { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+.note-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.note-meta { font-size: 11px; color: var(--text-dim); }
+.note-del {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 22px; height: 22px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+.note-del:hover { color: var(--danger); border-color: var(--danger); }
 
 .btn.small { padding: 6px 10px; font-size: 13px; }
 .btn.small.danger { border-color: var(--danger); color: var(--danger); }
