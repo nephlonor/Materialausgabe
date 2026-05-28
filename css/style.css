@@ -305,6 +305,33 @@ input:focus, select:focus, textarea:focus {
 .tag-pt-privat { background: rgba(139,148,158,0.18); color: var(--text-dim); }
 .tag-pt-institut { background: rgba(63,185,80,0.18); color: var(--success); }
 
+.totals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+.totals-cell {
+  background: var(--bg-elev-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  text-align: center;
+}
+.totals-label {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.totals-value {
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.totals-value.totals-institut { color: var(--success); }
+
 .toggle-group {
   display: inline-flex;
   background: var(--bg-elev-2);

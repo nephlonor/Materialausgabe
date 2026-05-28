@@ -714,10 +714,29 @@ function renderEdit() {
   const own = state.bookings
     .filter(b => b.deviceId && b.deviceId === state.deviceId)
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  const totals = own.reduce((acc, b) => {
+    const pt = b.paymentType === "institut" ? "institut" : "privat";
+    acc[pt] += Number(b.total) || 0;
+    return acc;
+  }, { privat: 0, institut: 0 });
   main.innerHTML = `
     <div class="card">
       <h2>Deine Buchungen</h2>
       <p class="muted">Nur Buchungen von diesem Gerät können angepasst werden. Sortiert nach Datum.</p>
+      <div class="totals-grid">
+        <div class="totals-cell">
+          <div class="totals-label">Privat</div>
+          <div class="totals-value">${formatCHF(totals.privat)}</div>
+        </div>
+        <div class="totals-cell">
+          <div class="totals-label">Institut</div>
+          <div class="totals-value totals-institut">${formatCHF(totals.institut)}</div>
+        </div>
+        <div class="totals-cell">
+          <div class="totals-label">Gesamt</div>
+          <div class="totals-value">${formatCHF(totals.privat + totals.institut)}</div>
+        </div>
+      </div>
     </div>
     <div id="own-list" class="booking-list"></div>
   `;
