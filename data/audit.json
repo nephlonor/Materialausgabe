@@ -75,6 +75,25 @@
         "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
         "createdAt": "2026-05-28T23:32:32.439Z"
       }
+    },
+    {
+      "id": "mpq4pfnmpcwksq",
+      "timestamp": "2026-05-28T23:33:14.242Z",
+      "action": "note",
+      "bookingId": "mpq1fgvrladlqm",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "text": "test",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:33:10.960Z"
+      }
     }
   ]
 }
