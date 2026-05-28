@@ -470,6 +470,60 @@
         "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
         "createdAt": "2026-05-28T23:43:34.382Z"
       }
+    },
+    {
+      "id": "mpq53jy3nbmet9",
+      "timestamp": "2026-05-28T23:44:12.987Z",
+      "action": "delete",
+      "bookingId": "mpq4w1ttpkcwvb",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpq4w1ttpkcwvb",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:38:22.913Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "items": [
+          {
+            "materialId": "gk-80x55-1.5",
+            "label": "1.5 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 1.8,
+            "qty": 1
+          }
+        ],
+        "total": 1.8,
+        "notes": [
+          {
+            "text": "test",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-28T23:38:39.259Z"
+          },
+          {
+            "text": "test",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-28T23:38:41.688Z"
+          },
+          {
+            "text": "hallo",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-28T23:41:34.087Z"
+          }
+        ],
+        "updatedAt": "2026-05-28T23:42:04.066Z"
+      }
     }
   ]
 }
