@@ -159,12 +159,12 @@ function showInstallBanner() {
   if (isIOS()) {
     el.innerHTML = `
       <div class="ib-body">
-        <div class="ib-title">Zum Startbildschirm hinzufügen</div>
+        <div class="ib-title">Add to Home Screen</div>
         <div class="ib-text">
           Tippe in Safari auf
           <svg class="ib-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m0 0l-4 4m4-4l4 4"/><path d="M4 14v4a2 2 0 002 2h12a2 2 0 002-2v-4"/></svg>
           „Teilen" und dann
-          <b>„Zum Home-Bildschirm"</b>, um die App zu installieren.
+          <b>„Add to Home Screen"</b>, um die App zu installieren.
         </div>
       </div>
       <button class="ib-close" id="ib-close" aria-label="Schliessen">×</button>
