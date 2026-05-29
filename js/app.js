@@ -802,7 +802,7 @@ function perPersonSummaryHtml() {
             const hay = `${g.name} ${g.idPerson}`.toLowerCase();
             return `
             <tr class="pp-row" data-search="${esc(hay)}" data-idperson="${esc(g.idPerson)}" data-name="${esc(g.name)}">
-              <td><div class="pp-name pp-name-clickable">${esc(g.name)}</div><div class="pp-id">ID ${esc(g.idPerson)} · ${g.count} Buchung${g.count === 1 ? "" : "en"}</div></td>
+              <td><div class="pp-name pp-name-clickable">${esc(g.name)}</div><div class="pp-id">${String(g.idPerson).trim() === "3388" ? "" : `ID ${esc(g.idPerson)} · `}${g.count} Buchung${g.count === 1 ? "" : "en"}</div></td>
               <td class="num">${formatCHF(g.privat)}</td>
               <td class="num">${formatCHF(g.institut)}</td>
             </tr>`;
@@ -849,8 +849,8 @@ function bindPerPersonInteractions() {
   document.querySelectorAll(".pp-row").forEach(row => {
     row.onclick = () => {
       const id = row.dataset.idperson;
-      // Fallback auf den Namen, wenn keine ID-Person hinterlegt ist (leer oder "?")
-      const useId = id && id !== "?";
+      // Fallback auf den Namen, wenn keine ID-Person hinterlegt ist (leer, "?" oder intern)
+      const useId = id && id !== "?" && id !== "3388";
       state.searchListing = useId ? id : (row.dataset.name || "");
       const input = document.getElementById("search-listing");
       if (input) input.value = state.searchListing;
@@ -917,7 +917,7 @@ function bookingCardHtml(b, opts = {}) {
         <span class="who">${esc(b.firstName)} ${esc(b.lastName)}</span>
         <span class="when">${esc(when)}</span>
       </div>
-      <div class="meta">${esc(b.jahreskurs)} · ID ${esc(b.idPerson)}</div>
+      <div class="meta">${esc(b.jahreskurs)}${String(b.idPerson ?? "").trim() === "3388" ? "" : ` · ID ${esc(b.idPerson)}`}</div>
       ${b.items && b.items.length ? `<ul>
         ${b.items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} <span class="muted">(${formatCHF(i.qty * i.unitPrice)})</span></li>`).join("")}
       </ul>` : ""}
