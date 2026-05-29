@@ -549,6 +549,6939 @@
       "plates": [],
       "total": 25.8,
       "notes": []
+    },
+    {
+      "id": "imp2-0000kbhog",
+      "deviceId": "import",
+      "createdAt": "2026-02-25T08:00:00.000Z",
+      "firstName": "Somiah",
+      "lastName": "Mohammadi",
+      "idPerson": "",
+      "email": "somiah.mohammadi@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 1.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-00012shyv",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:00:01.000Z",
+      "firstName": "Jean Howard",
+      "lastName": "Waeber",
+      "idPerson": "",
+      "email": "jean.waeber@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0002msdje",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:00:02.000Z",
+      "firstName": "Sebastian Noa",
+      "lastName": "Graf",
+      "idPerson": "",
+      "email": "sebastian.graf@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 20
+        }
+      ],
+      "plates": [],
+      "total": 97.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-00036yvir",
+      "deviceId": "import",
+      "createdAt": "2026-04-10T08:00:03.000Z",
+      "firstName": "Emilia",
+      "lastName": "Nisius",
+      "idPerson": "",
+      "email": "emilia.nisius@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 4.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0004fynde",
+      "deviceId": "import",
+      "createdAt": "2026-04-10T08:00:04.000Z",
+      "firstName": "Lena Nicole",
+      "lastName": "Heck",
+      "idPerson": "",
+      "email": "lena.heck@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 4.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-00058797s",
+      "deviceId": "import",
+      "createdAt": "2026-04-15T08:00:05.000Z",
+      "firstName": "Alexander",
+      "lastName": "Scholz",
+      "idPerson": "",
+      "email": "alexander.scholz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [
+        "GSK 5mm, 50x70"
+      ],
+      "total": 27.15,
+      "notes": []
+    },
+    {
+      "id": "imp2-000687vfp",
+      "deviceId": "import",
+      "createdAt": "2026-04-16T08:00:06.000Z",
+      "firstName": "Nils Lukas",
+      "lastName": "Huscke",
+      "idPerson": "",
+      "email": "nils.huscke@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 41.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-00078p358",
+      "deviceId": "import",
+      "createdAt": "2026-04-16T08:00:07.000Z",
+      "firstName": "Lennart Levi",
+      "lastName": "Lang",
+      "idPerson": "",
+      "email": "lennart.lang@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 41.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0008ah7pn",
+      "deviceId": "import",
+      "createdAt": "2026-04-23T08:00:08.000Z",
+      "firstName": "Lena Ida",
+      "lastName": "Gugler",
+      "idPerson": "",
+      "email": "lena.gugler@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 32.75,
+      "notes": []
+    },
+    {
+      "id": "imp2-0009u41r1",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:09.000Z",
+      "firstName": "Fanny",
+      "lastName": "Gunti",
+      "idPerson": "",
+      "email": "fanny.gunti@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 6
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 52.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0010voxa6",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:10.000Z",
+      "firstName": "Alexander Manuel",
+      "lastName": "Horvath",
+      "idPerson": "",
+      "email": "alexander.horvath@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 47.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0011aevga",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:11.000Z",
+      "firstName": "Luzian",
+      "lastName": "Choffat",
+      "idPerson": "",
+      "email": "luzian.choffat@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [
+        "MDF 10mm, 1mx1.4m"
+      ],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0012gsnwr",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:12.000Z",
+      "firstName": "Dominic",
+      "lastName": "Plattner",
+      "idPerson": "",
+      "email": "dominic.plattner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 10mm, 1mx1.4m"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0013izflq",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:13.000Z",
+      "firstName": "Janic Elia",
+      "lastName": "Mikosch",
+      "idPerson": "",
+      "email": "janicelia.mikosch@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 48.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-00143av7l",
+      "deviceId": "import",
+      "createdAt": "2026-04-19T08:00:14.000Z",
+      "firstName": "Esther",
+      "lastName": "Maul",
+      "idPerson": "",
+      "email": "esther.maul@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 21.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-0015w6amh",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:15.000Z",
+      "firstName": "Emilia",
+      "lastName": "Nisius",
+      "idPerson": "",
+      "email": "emilia.nisius@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 5.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0016sf94c",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:16.000Z",
+      "firstName": "Leonardo",
+      "lastName": "Brunetti",
+      "idPerson": "",
+      "email": "leonardo.brunetti@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-00179imr5",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:17.000Z",
+      "firstName": "Gözde",
+      "lastName": "Kaya",
+      "idPerson": "",
+      "email": "goezde.kaya@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 57.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0018rlnem",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:18.000Z",
+      "firstName": "Aylin",
+      "lastName": "Sirin",
+      "idPerson": "",
+      "email": "aylin.sirin@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 13.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0019yojsn",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:19.000Z",
+      "firstName": "Noah",
+      "lastName": "König",
+      "idPerson": "",
+      "email": "noah.koenig@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 5.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-00201qckz",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:00:20.000Z",
+      "firstName": "Eliza Johanna",
+      "lastName": "Rührig",
+      "idPerson": "",
+      "email": "eliza.ruehrig@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (80 × 55 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 12.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0021t9x1n",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:21.000Z",
+      "firstName": "Yves Matthieu",
+      "lastName": "Walker",
+      "idPerson": "",
+      "email": "yves.walker1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 14.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0022nprza",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:22.000Z",
+      "firstName": "Micha Sileno",
+      "lastName": "Boxler",
+      "idPerson": "",
+      "email": "micha.boxler@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0023ujya2",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:23.000Z",
+      "firstName": "Simon",
+      "lastName": "Bösch",
+      "idPerson": "",
+      "email": "simon.boesch@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 24.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-0024wfwrd",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:24.000Z",
+      "firstName": "Gabriel Fridolin",
+      "lastName": "Germann",
+      "idPerson": "",
+      "email": "gabriel.germann@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 2.75,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 24.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0025s6xju",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:25.000Z",
+      "firstName": "Alexander",
+      "lastName": "Scholz",
+      "idPerson": "",
+      "email": "alexander.scholz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 8.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0026eeokd",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:26.000Z",
+      "firstName": "Jessica",
+      "lastName": "Denz",
+      "idPerson": "",
+      "email": "jessica.denz@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 36.9,
+      "notes": []
+    },
+    {
+      "id": "imp2-0027wuu2t",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:27.000Z",
+      "firstName": "Claude",
+      "lastName": "Müller",
+      "idPerson": "",
+      "email": "claude.mueller@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0028te3fe",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:28.000Z",
+      "firstName": "Seyla Sesarina",
+      "lastName": "Demir",
+      "idPerson": "",
+      "email": "seyla.demir@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 14.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-00296ursl",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:29.000Z",
+      "firstName": "Loreta",
+      "lastName": "Trupi",
+      "idPerson": "",
+      "email": "loreta.trupi@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0030088m0",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:30.000Z",
+      "firstName": "Tim Victor",
+      "lastName": "Förster",
+      "idPerson": "",
+      "email": "timvictor.foerster@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 17.45,
+      "notes": []
+    },
+    {
+      "id": "imp2-00319r5so",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:31.000Z",
+      "firstName": "Samuel",
+      "lastName": "Husistein",
+      "idPerson": "",
+      "email": "samuel.husistein@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-003295vsx",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:32.000Z",
+      "firstName": "Sophie Helena",
+      "lastName": "Bächli",
+      "idPerson": "",
+      "email": "sophie.baechli@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-00331lbdi",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:33.000Z",
+      "firstName": "Louis",
+      "lastName": "Probst",
+      "idPerson": "",
+      "email": "louis.probst@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0034moui3",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:34.000Z",
+      "firstName": "Noah",
+      "lastName": "König",
+      "idPerson": "",
+      "email": "noah.koenig@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 6
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 30.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-003516qpp",
+      "deviceId": "import",
+      "createdAt": "2026-06-28T08:00:35.000Z",
+      "firstName": "David",
+      "lastName": "Klauz",
+      "idPerson": "",
+      "email": "david.klauz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 14.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0036bqazw",
+      "deviceId": "import",
+      "createdAt": "2026-04-28T08:00:36.000Z",
+      "firstName": "Andrin",
+      "lastName": "Meier",
+      "idPerson": "",
+      "email": "andrin.meier@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 4mm, 280x57"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0037ueaix",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:37.000Z",
+      "firstName": "Mirta",
+      "lastName": "Grüter",
+      "idPerson": "",
+      "email": "mirta.grueter@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 6.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0038eqqzh",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:38.000Z",
+      "firstName": "Sylvain",
+      "lastName": "Thommen",
+      "idPerson": "",
+      "email": "sylvain.thommen@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 4.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0039ku3a2",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:39.000Z",
+      "firstName": "Panatda Jenny",
+      "lastName": "Schenk",
+      "idPerson": "",
+      "email": "panatda.schenk@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-na",
+          "label": "o. A.",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 0.0,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 0.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0040dks3j",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:40.000Z",
+      "firstName": "Kevin",
+      "lastName": "Aebischer",
+      "idPerson": "",
+      "email": "kevin.aebischer@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 24.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0041m1jrf",
+      "deviceId": "import",
+      "createdAt": "2026-04-27T08:00:41.000Z",
+      "firstName": "Isabela",
+      "lastName": "Avila Silva",
+      "idPerson": "",
+      "email": "isabela.avilasilva@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 7
+        }
+      ],
+      "plates": [],
+      "total": 33.95,
+      "notes": []
+    },
+    {
+      "id": "imp2-0042i2bg2",
+      "deviceId": "import",
+      "createdAt": "2026-04-27T08:00:42.000Z",
+      "firstName": "Jean Howard",
+      "lastName": "Waeber",
+      "idPerson": "",
+      "email": "jean.waeber@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 13.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0043otiys",
+      "deviceId": "import",
+      "createdAt": "2026-04-27T08:00:43.000Z",
+      "firstName": "Efe",
+      "lastName": "Arslan",
+      "idPerson": "",
+      "email": "efe.arslan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0044mil3w",
+      "deviceId": "import",
+      "createdAt": "2026-04-27T08:00:44.000Z",
+      "firstName": "David Andreas",
+      "lastName": "Vranesic",
+      "idPerson": "",
+      "email": "david.vranesic@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.8,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 11.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-00456190h",
+      "deviceId": "import",
+      "createdAt": "2026-04-27T08:00:45.000Z",
+      "firstName": "Max",
+      "lastName": "Schmid",
+      "idPerson": "",
+      "email": "max.schmid@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 8.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-004610vjt",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:00:46.000Z",
+      "firstName": "Lena Nicole",
+      "lastName": "Heck",
+      "idPerson": "",
+      "email": "lena.heck@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 7.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0047dsthc",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:00:47.000Z",
+      "firstName": "Gian",
+      "lastName": "Kocher",
+      "idPerson": "",
+      "email": "gian.kocher@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 18.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-00484pw3n",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:48.000Z",
+      "firstName": "David Andreas",
+      "lastName": "Vranesic",
+      "idPerson": "",
+      "email": "david.vranesic@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 11.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0049d6j2t",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:49.000Z",
+      "firstName": "Svenja",
+      "lastName": "Borer",
+      "idPerson": "",
+      "email": "svenja.borer1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 1.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0050rj17p",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:50.000Z",
+      "firstName": "Leonardo",
+      "lastName": "Brunetti",
+      "idPerson": "",
+      "email": "leonardo.brunetti@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 3.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0051bal5g",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:51.000Z",
+      "firstName": "Claude",
+      "lastName": "Müller",
+      "idPerson": "",
+      "email": "claude.mueller@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 14.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0052iv0lh",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:52.000Z",
+      "firstName": "Sophie Linda",
+      "lastName": "Burger",
+      "idPerson": "",
+      "email": "sophie.burger@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 5
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 60.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0053asmhc",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:53.000Z",
+      "firstName": "Raphael",
+      "lastName": "Reist",
+      "idPerson": "",
+      "email": "raphael.reist@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0054kyug6",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:54.000Z",
+      "firstName": "Loreta",
+      "lastName": "Trupi",
+      "idPerson": "",
+      "email": "loreta.trupi@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 14.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-00556zmcp",
+      "deviceId": "import",
+      "createdAt": "2026-04-24T08:00:55.000Z",
+      "firstName": "Laurent Alexander",
+      "lastName": "Theurillat",
+      "idPerson": "",
+      "email": "laurent.theurillat@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.8,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 19.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0056rgb6u",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:00:56.000Z",
+      "firstName": "Micha Sileno",
+      "lastName": "Boxler",
+      "idPerson": "",
+      "email": "micha.boxler@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 18.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0057bpld4",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:00:57.000Z",
+      "firstName": "Seyla Sesarina",
+      "lastName": "Demir",
+      "idPerson": "",
+      "email": "seyla.demir@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 14.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0058rb0j6",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:00:58.000Z",
+      "firstName": "Yves Matthieu",
+      "lastName": "Walker",
+      "idPerson": "",
+      "email": "yves.walker1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0059l3351",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:00:59.000Z",
+      "firstName": "Lucia",
+      "lastName": "Canabal Korencan",
+      "idPerson": "",
+      "email": "lucia.canabalkorencan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 5.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0060b6zor",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:01:00.000Z",
+      "firstName": "Emilia",
+      "lastName": "Nisius",
+      "idPerson": "",
+      "email": "emilia.nisius@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 8.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0061irsb3",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:01:01.000Z",
+      "firstName": "Bettina Julia",
+      "lastName": "Krack",
+      "idPerson": "",
+      "email": "bettina.krack@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 4.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-00622hzql",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:01:02.000Z",
+      "firstName": "Stéphanie",
+      "lastName": "Joos",
+      "idPerson": "",
+      "email": "stephanie.joos@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 3.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0063zs5qg",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:01:03.000Z",
+      "firstName": "Nikita",
+      "lastName": "Chu",
+      "idPerson": "",
+      "email": "nikita.chu@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 4.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-00642cjan",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:01:04.000Z",
+      "firstName": "Leonardo",
+      "lastName": "Brunetti",
+      "idPerson": "",
+      "email": "leonardo.brunetti@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 4.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-006582pac",
+      "deviceId": "import",
+      "createdAt": "2026-04-22T08:01:05.000Z",
+      "firstName": "Svenja",
+      "lastName": "Borer",
+      "idPerson": "",
+      "email": "svenja.borer1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.2,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x110-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 6.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-006604xl8",
+      "deviceId": "import",
+      "createdAt": "2026-04-16T08:01:06.000Z",
+      "firstName": "Noel Milan Reiner",
+      "lastName": "Packeiser",
+      "idPerson": "",
+      "email": "noel.packeiser@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 41.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0067t2et1",
+      "deviceId": "import",
+      "createdAt": "2026-04-20T08:01:07.000Z",
+      "firstName": "Munir",
+      "lastName": "Allarakhia",
+      "idPerson": "",
+      "email": "munir.allarakhia@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "4× GSK 5mm, 50x70"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0068rlb74",
+      "deviceId": "import",
+      "createdAt": "2026-04-20T08:01:08.000Z",
+      "firstName": "Panatda Jenny",
+      "lastName": "Schenk",
+      "idPerson": "",
+      "email": "panatda.schenk@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-00696o8vn",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:01:09.000Z",
+      "firstName": "Efe",
+      "lastName": "Arslan",
+      "idPerson": "",
+      "email": "efe.arslan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 14.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0070n9bar",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:01:10.000Z",
+      "firstName": "Antonio",
+      "lastName": "Bisicchia",
+      "idPerson": "",
+      "email": "antonio.bisicchia@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 52.9,
+      "notes": []
+    },
+    {
+      "id": "imp2-0071xcxgr",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:01:11.000Z",
+      "firstName": "Malena",
+      "lastName": "Canabal Korencan",
+      "idPerson": "",
+      "email": "malena.canabalkorencan@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 15
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 95.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0072mgiw4",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:01:12.000Z",
+      "firstName": "David",
+      "lastName": "Klauz",
+      "idPerson": "",
+      "email": "david.klauz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0073kg5yb",
+      "deviceId": "import",
+      "createdAt": "2026-04-21T08:01:13.000Z",
+      "firstName": "Luca",
+      "lastName": "Crivaro",
+      "idPerson": "",
+      "email": "luca.crivaro@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 13.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0074nwhfq",
+      "deviceId": "import",
+      "createdAt": "2026-03-05T08:01:14.000Z",
+      "firstName": "Janic Elia",
+      "lastName": "Mikosch",
+      "idPerson": "",
+      "email": "janicelia.mikosch@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 30
+        }
+      ],
+      "plates": [],
+      "total": 145.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0075ldk56",
+      "deviceId": "import",
+      "createdAt": "2026-03-05T08:01:15.000Z",
+      "firstName": "Laura",
+      "lastName": "Kirner",
+      "idPerson": "",
+      "email": "laura.kirner@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 38.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0076n8o4w",
+      "deviceId": "import",
+      "createdAt": "2026-03-05T08:01:16.000Z",
+      "firstName": "Maryna",
+      "lastName": "Metsger",
+      "idPerson": "",
+      "email": "maryna.metsger@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 20
+        }
+      ],
+      "plates": [],
+      "total": 44.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0077n7ede",
+      "deviceId": "import",
+      "createdAt": "2026-03-06T08:01:17.000Z",
+      "firstName": "Baptiste",
+      "lastName": "Vaucher",
+      "idPerson": "",
+      "email": "baptiste.vaucher@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 24.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-00785n9m5",
+      "deviceId": "import",
+      "createdAt": "2026-03-06T08:01:18.000Z",
+      "firstName": "Veronica",
+      "lastName": "Alessi",
+      "idPerson": "",
+      "email": "veronica.alessi@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 24.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-00791e4p3",
+      "deviceId": "import",
+      "createdAt": "2026-03-06T08:01:19.000Z",
+      "firstName": "Camilla Alice",
+      "lastName": "Marcoli",
+      "idPerson": "",
+      "email": "camilla.marcoli@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 13.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0080mwfpr",
+      "deviceId": "import",
+      "createdAt": "2026-03-09T08:01:20.000Z",
+      "firstName": "Viktoriia",
+      "lastName": "Paegle",
+      "idPerson": "",
+      "email": "viktoriia.paegle@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 8mm, 90x60"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0081bw611",
+      "deviceId": "import",
+      "createdAt": "2026-03-10T08:01:21.000Z",
+      "firstName": "Max",
+      "lastName": "Kresse",
+      "idPerson": "",
+      "email": "max.kresse@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 7
+        }
+      ],
+      "plates": [],
+      "total": 31.85,
+      "notes": []
+    },
+    {
+      "id": "imp2-0082dm632",
+      "deviceId": "import",
+      "createdAt": "2026-03-10T08:01:22.000Z",
+      "firstName": "Viktoriia",
+      "lastName": "Paegle",
+      "idPerson": "",
+      "email": "viktoriia.paegle@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [],
+      "plates": [
+        "MDF 10mm, ca.1.7x0.9m"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0083au8cx",
+      "deviceId": "import",
+      "createdAt": "2026-03-12T08:01:23.000Z",
+      "firstName": "Martyna",
+      "lastName": "Fijalkowska",
+      "idPerson": "",
+      "email": "martyna.fijalkowska@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 3.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0084w3430",
+      "deviceId": "import",
+      "createdAt": "2026-03-12T08:01:24.000Z",
+      "firstName": "Ladina Samira",
+      "lastName": "Thurnherr",
+      "idPerson": "",
+      "email": "ladina.thurnherr@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 20
+        }
+      ],
+      "plates": [],
+      "total": 97.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0085up5pe",
+      "deviceId": "import",
+      "createdAt": "2026-03-17T08:01:25.000Z",
+      "firstName": "Olivia",
+      "lastName": "Schmidt",
+      "idPerson": "",
+      "email": "olivia.schmidt@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 21
+        }
+      ],
+      "plates": [],
+      "total": 46.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-00866377a",
+      "deviceId": "import",
+      "createdAt": "2026-02-26T08:01:26.000Z",
+      "firstName": "Raphael",
+      "lastName": "Gillet",
+      "idPerson": "",
+      "email": "raphael.gillet@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 1.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0087nckch",
+      "deviceId": "import",
+      "createdAt": "2026-03-02T08:01:27.000Z",
+      "firstName": "Veronica",
+      "lastName": "Alessi",
+      "idPerson": "",
+      "email": "veronica.alessi@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 3.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0088ff4wp",
+      "deviceId": "import",
+      "createdAt": "2026-03-02T08:01:28.000Z",
+      "firstName": "William",
+      "lastName": "Devries",
+      "idPerson": "",
+      "email": "william.devries@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 4.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0089qu2b9",
+      "deviceId": "import",
+      "createdAt": "2026-03-02T08:01:29.000Z",
+      "firstName": "Raphael",
+      "lastName": "Gillet",
+      "idPerson": "",
+      "email": "raphael.gillet@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 5.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0090xzq69",
+      "deviceId": "import",
+      "createdAt": "2026-03-03T08:01:30.000Z",
+      "firstName": "Raphael",
+      "lastName": "Reist",
+      "idPerson": "",
+      "email": "raphael.reist@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 50
+        }
+      ],
+      "plates": [],
+      "total": 110.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0091vq71i",
+      "deviceId": "import",
+      "createdAt": "2026-03-02T08:01:31.000Z",
+      "firstName": "–",
+      "lastName": "Institut",
+      "idPerson": "",
+      "email": "",
+      "jahreskurs": "",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 40
+        }
+      ],
+      "plates": [],
+      "total": 242.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0092r9cla",
+      "deviceId": "import",
+      "createdAt": "2026-02-19T08:01:32.000Z",
+      "firstName": "Vincenzo Rufname: Vincent",
+      "lastName": "Zuccarello",
+      "idPerson": "",
+      "email": "vincenzo.zuccarello@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 20
+        }
+      ],
+      "plates": [],
+      "total": 54.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0093hl25x",
+      "deviceId": "import",
+      "createdAt": "2026-02-19T08:01:33.000Z",
+      "firstName": "Munir",
+      "lastName": "Allarakhia",
+      "idPerson": "",
+      "email": "munir.allarakhia@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 7.05,
+      "notes": []
+    },
+    {
+      "id": "imp2-00940p3rb",
+      "deviceId": "import",
+      "createdAt": "2026-01-01T08:01:34.000Z",
+      "firstName": "Céline",
+      "lastName": "Schriber",
+      "idPerson": "",
+      "email": "celine.schriber@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 30
+        }
+      ],
+      "plates": [],
+      "total": 66.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0095kdfpw",
+      "deviceId": "import",
+      "createdAt": "2026-01-01T08:01:35.000Z",
+      "firstName": "Jean Howard",
+      "lastName": "Waeber",
+      "idPerson": "",
+      "email": "jean.waeber@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 30
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 60
+        }
+      ],
+      "plates": [],
+      "total": 307.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0096w9zv1",
+      "deviceId": "import",
+      "createdAt": "2026-02-20T08:01:36.000Z",
+      "firstName": "Hannah Flora",
+      "lastName": "Reul",
+      "idPerson": "",
+      "email": "hannah.reul@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 30
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 12
+        }
+      ],
+      "plates": [],
+      "total": 66.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0097578nk",
+      "deviceId": "import",
+      "createdAt": "2026-02-20T08:01:37.000Z",
+      "firstName": "–",
+      "lastName": "3.Jahreskurs Klassenmodell",
+      "idPerson": "",
+      "email": "",
+      "jahreskurs": "",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 20
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 87.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0098n3w1v",
+      "deviceId": "import",
+      "createdAt": "2026-02-24T08:01:38.000Z",
+      "firstName": "Jean Howard",
+      "lastName": "Waeber",
+      "idPerson": "",
+      "email": "jean.waeber@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 30
+        }
+      ],
+      "plates": [],
+      "total": 81.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0099j6cjt",
+      "deviceId": "import",
+      "createdAt": "2026-02-25T08:01:39.000Z",
+      "firstName": "Lennart Levi",
+      "lastName": "Lang",
+      "idPerson": "",
+      "email": "lennart.lang@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 48.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-01002m13s",
+      "deviceId": "import",
+      "createdAt": "2026-02-25T08:01:40.000Z",
+      "firstName": "Baptiste",
+      "lastName": "Vaucher",
+      "idPerson": "",
+      "email": "baptiste.vaucher@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "institut",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 48.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-01014gwpz",
+      "deviceId": "import",
+      "createdAt": "2026-02-25T08:01:41.000Z",
+      "firstName": "Sophie",
+      "lastName": "Bernhard",
+      "idPerson": "",
+      "email": "sophie.bernhard@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "institut",
+      "items": [],
+      "plates": [
+        "MDF 8mm, 120x36cm"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-01020xf1p",
+      "deviceId": "import",
+      "createdAt": "2026-02-26T08:01:42.000Z",
+      "firstName": "Maximus",
+      "lastName": "Stoffel",
+      "idPerson": "",
+      "email": "maximus.stoffel@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 22.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0103eok5e",
+      "deviceId": "import",
+      "createdAt": "2026-02-26T08:01:43.000Z",
+      "firstName": "Janic Elia",
+      "lastName": "Mikosch",
+      "idPerson": "",
+      "email": "janicelia.mikosch@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 38.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0104imp2w",
+      "deviceId": "import",
+      "createdAt": "2026-02-26T08:01:44.000Z",
+      "firstName": "Baptiste",
+      "lastName": "Vaucher",
+      "idPerson": "",
+      "email": "baptiste.vaucher@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 20
+        }
+      ],
+      "plates": [],
+      "total": 97.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0105xnle8",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:45.000Z",
+      "firstName": "Noah",
+      "lastName": "König",
+      "idPerson": "",
+      "email": "noah.koenig@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 7.15,
+      "notes": []
+    },
+    {
+      "id": "imp2-0106bn321",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:46.000Z",
+      "firstName": "Leonardo Louis",
+      "lastName": "Gröflin",
+      "idPerson": "",
+      "email": "leonardo.groeflin@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 1.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-01070p4bl",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:47.000Z",
+      "firstName": "Michael",
+      "lastName": "Burggraf",
+      "idPerson": "",
+      "email": "michael.burggraf@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 13.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-01084ag93",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:48.000Z",
+      "firstName": "Nikita",
+      "lastName": "Chu",
+      "idPerson": "",
+      "email": "mirta.grueter@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0109wdscj",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:49.000Z",
+      "firstName": "Dorian Oliver Hans",
+      "lastName": "Weyl",
+      "idPerson": "",
+      "email": "dorian.weyl@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 13.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-01106bb2b",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:50.000Z",
+      "firstName": "Crispin",
+      "lastName": "Keist",
+      "idPerson": "",
+      "email": "crispin.keist@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 10.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0111utltr",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:51.000Z",
+      "firstName": "Andrin",
+      "lastName": "Meier",
+      "idPerson": "",
+      "email": "andrin.meier@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 0.0,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 4
+        }
+      ],
+      "plates": [
+        "MDF 4mm, 2mx1.4m"
+      ],
+      "total": 23.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0112lr3kn",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:52.000Z",
+      "firstName": "Efe",
+      "lastName": "Arslan",
+      "idPerson": "",
+      "email": "efe.arslan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 21.45,
+      "notes": []
+    },
+    {
+      "id": "imp2-0113hlm80",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:53.000Z",
+      "firstName": "Marek",
+      "lastName": "Wolf",
+      "idPerson": "",
+      "email": "marek.wolf@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 3.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0114ynpqr",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:54.000Z",
+      "firstName": "Fanny",
+      "lastName": "Gunti",
+      "idPerson": "",
+      "email": "fanny.gunti@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 5.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-01155o9z2",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:55.000Z",
+      "firstName": "Aylin",
+      "lastName": "Sirin",
+      "idPerson": "",
+      "email": "aylin.sirin@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 2.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0116ehown",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:56.000Z",
+      "firstName": "Roman Simon",
+      "lastName": "Schmutz",
+      "idPerson": "",
+      "email": "roman.schmutz@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 39.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-011750kp5",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:57.000Z",
+      "firstName": "Fabrice Jerôme",
+      "lastName": "Zaugg",
+      "idPerson": "",
+      "email": "fabrice.zaugg@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 26.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0118r69ne",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:58.000Z",
+      "firstName": "Bettina Julia",
+      "lastName": "Krack",
+      "idPerson": "",
+      "email": "bettina.krack@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 2.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0119ehpey",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:01:59.000Z",
+      "firstName": "Samantha Allison",
+      "lastName": "Helfer",
+      "idPerson": "",
+      "email": "samantha.helfer@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 19.95,
+      "notes": []
+    },
+    {
+      "id": "imp2-0120gyx6c",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:00.000Z",
+      "firstName": "Louis",
+      "lastName": "Probst",
+      "idPerson": "",
+      "email": "louis.probst@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 6.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0121py1jl",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:01.000Z",
+      "firstName": "Thusan",
+      "lastName": "Sukumaran",
+      "idPerson": "",
+      "email": "thusan.sukumaran@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 2.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0122j807h",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:02.000Z",
+      "firstName": "Mirta",
+      "lastName": "Grüter",
+      "idPerson": "",
+      "email": "mirta.grueter@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 18.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-01234d4n5",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:03.000Z",
+      "firstName": "Lou",
+      "lastName": "Holtmeier",
+      "idPerson": "",
+      "email": "lou.holtmeier@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 28.05,
+      "notes": []
+    },
+    {
+      "id": "imp2-01245nibf",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:04.000Z",
+      "firstName": "Marek",
+      "lastName": "Wolf",
+      "idPerson": "",
+      "email": "marek.wolf@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 21.45,
+      "notes": []
+    },
+    {
+      "id": "imp2-0125ho7tc",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:05.000Z",
+      "firstName": "Fabian",
+      "lastName": "Nützi",
+      "idPerson": "",
+      "email": "fabian.nuetzi@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 1.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0126h6z1g",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:06.000Z",
+      "firstName": "Sebastian Santiago",
+      "lastName": "Wróblewski",
+      "idPerson": "",
+      "email": "sebastian.wroblewski@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 6.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0127g4plt",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:07.000Z",
+      "firstName": "Jessica",
+      "lastName": "Denz",
+      "idPerson": "",
+      "email": "jessica.denz@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 37.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0128i6rc9",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:08.000Z",
+      "firstName": "David",
+      "lastName": "Klauz",
+      "idPerson": "",
+      "email": "david.klauz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 14.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-01299sftu",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:09.000Z",
+      "firstName": "Alexander",
+      "lastName": "Scholz",
+      "idPerson": "",
+      "email": "alexander.scholz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 14.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0130a5x0f",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:10.000Z",
+      "firstName": "Tina",
+      "lastName": "Gisin",
+      "idPerson": "",
+      "email": "tina.gisin@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 16.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-01316faog",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:11.000Z",
+      "firstName": "Sophie",
+      "lastName": "Bernhard",
+      "idPerson": "",
+      "email": "sophie.bernhard@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 5mm, 100x70cm",
+        "MDF 5mm, 70x55",
+        "MDF 5mm, 60x55"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0132onp78",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:12.000Z",
+      "firstName": "Svenja",
+      "lastName": "Borer",
+      "idPerson": "",
+      "email": "svenja.borer1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 8.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0133aauet",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:13.000Z",
+      "firstName": "Sophie Linda",
+      "lastName": "Burger",
+      "idPerson": "",
+      "email": "sophie.burger@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 83.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0134cvq98",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:14.000Z",
+      "firstName": "Leonardo",
+      "lastName": "Brunetti",
+      "idPerson": "",
+      "email": "leonardo.brunetti@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x110-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.2,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x110-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.8,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 22.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0135586bn",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:15.000Z",
+      "firstName": "Sophie",
+      "lastName": "Bernhard",
+      "idPerson": "",
+      "email": "sophie.bernhard@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 14.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-01363y4g0",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:16.000Z",
+      "firstName": "Laila",
+      "lastName": "Miarelli",
+      "idPerson": "",
+      "email": "laila.miarelli@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 25.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0137ddww2",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:17.000Z",
+      "firstName": "Luisa",
+      "lastName": "Vogelbacher",
+      "idPerson": "",
+      "email": "luisa.vogelbacher@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 2.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0138pw8md",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:18.000Z",
+      "firstName": "Arnault Sebastian Paul",
+      "lastName": "Graftiaux",
+      "idPerson": "",
+      "email": "arnault.graftiaux@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 7.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-01393mgxe",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:19.000Z",
+      "firstName": "Joel",
+      "lastName": "Amrhein",
+      "idPerson": "",
+      "email": "joel.amrhein@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 22.75,
+      "notes": []
+    },
+    {
+      "id": "imp2-0140kfvsa",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:20.000Z",
+      "firstName": "Sara",
+      "lastName": "Stutz",
+      "idPerson": "",
+      "email": "sara.stutz@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0141psf2n",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:21.000Z",
+      "firstName": "Lara",
+      "lastName": "Marlétaz",
+      "idPerson": "",
+      "email": "lara.marletaz@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 18.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0142ce8jb",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:22.000Z",
+      "firstName": "Ndey Iris",
+      "lastName": "Njie Sillah",
+      "idPerson": "",
+      "email": "ndey.njiesillah@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0143otjfc",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:23.000Z",
+      "firstName": "Olivia",
+      "lastName": "Schmidt",
+      "idPerson": "",
+      "email": "olivia.schmidt@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 9.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0144y5cd1",
+      "deviceId": "import",
+      "createdAt": "2026-05-26T08:02:24.000Z",
+      "firstName": "Lars",
+      "lastName": "Model",
+      "idPerson": "",
+      "email": "lars.model@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 5
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 27.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0145wxooe",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:25.000Z",
+      "firstName": "Anne Julie",
+      "lastName": "Mikosch",
+      "idPerson": "",
+      "email": "anne.mikosch@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 7
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 42.05,
+      "notes": []
+    },
+    {
+      "id": "imp2-01469zlbq",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:26.000Z",
+      "firstName": "Céline",
+      "lastName": "Schriber",
+      "idPerson": "",
+      "email": "celine.schriber@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-5.0",
+          "label": "5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 0.0,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 0.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0147nemwp",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:27.000Z",
+      "firstName": "Maryna",
+      "lastName": "Metsger",
+      "idPerson": "",
+      "email": "maryna.metsger@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 15.85,
+      "notes": []
+    },
+    {
+      "id": "imp2-01488cblz",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:28.000Z",
+      "firstName": "Adrien Jean",
+      "lastName": "Froidevaux",
+      "idPerson": "",
+      "email": "adrien.froidevaux@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x110-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 16.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0149z5ytq",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:29.000Z",
+      "firstName": "Bettina Julia",
+      "lastName": "Krack",
+      "idPerson": "",
+      "email": "bettina.krack@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0150okf1r",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:30.000Z",
+      "firstName": "Mirta",
+      "lastName": "Grüter",
+      "idPerson": "",
+      "email": "mirta.grueter@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 7.15,
+      "notes": []
+    },
+    {
+      "id": "imp2-0151xohxo",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:31.000Z",
+      "firstName": "David",
+      "lastName": "Klauz",
+      "idPerson": "",
+      "email": "david.klauz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 35.75,
+      "notes": []
+    },
+    {
+      "id": "imp2-01525cyio",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:32.000Z",
+      "firstName": "Michael",
+      "lastName": "Burggraf",
+      "idPerson": "",
+      "email": "michael.burggraf@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 72.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0153rvlzh",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:33.000Z",
+      "firstName": "David",
+      "lastName": "Klauz",
+      "idPerson": "",
+      "email": "david.klauz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 10.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0154ch8uc",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:34.000Z",
+      "firstName": "Yves Matthieu",
+      "lastName": "Walker",
+      "idPerson": "",
+      "email": "yves.walker1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 28.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0155k5rbn",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:35.000Z",
+      "firstName": "Simon",
+      "lastName": "Bösch",
+      "idPerson": "",
+      "email": "simon.boesch@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 28.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-01561aas1",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:36.000Z",
+      "firstName": "Julia",
+      "lastName": "Eberwein",
+      "idPerson": "",
+      "email": "julia.eberwein@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 8
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 6
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-na",
+          "label": "o. A.",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 0.0,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 58.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0157kbpm1",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:37.000Z",
+      "firstName": "Leonardo Louis",
+      "lastName": "Gröflin",
+      "idPerson": "",
+      "email": "leonardo.groeflin@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 6.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0158wt5hy",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:38.000Z",
+      "firstName": "Nikita",
+      "lastName": "Chu",
+      "idPerson": "",
+      "email": "nikita.chu@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 15.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0159b4lz0",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:39.000Z",
+      "firstName": "Stéphanie",
+      "lastName": "Joos",
+      "idPerson": "",
+      "email": "stephanie.joos@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 7
+        },
+        {
+          "materialId": "gk-80x55-na",
+          "label": "o. A.",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 0.0,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 15.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0160mx176",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:40.000Z",
+      "firstName": "Lea Romana",
+      "lastName": "Hüsler",
+      "idPerson": "",
+      "email": "lea.huesler@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 21.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0161eoy27",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:41.000Z",
+      "firstName": "Nico Ramon",
+      "lastName": "Holzer",
+      "idPerson": "",
+      "email": "nico.holzer@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-3.0",
+          "label": "3 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 0.0,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 5.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0162s4pv2",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:42.000Z",
+      "firstName": "Sebastian Noa",
+      "lastName": "Graf",
+      "idPerson": "",
+      "email": "sebastian.graf@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 35.75,
+      "notes": []
+    },
+    {
+      "id": "imp2-0163x9xf2",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:43.000Z",
+      "firstName": "David Marc",
+      "lastName": "Wetzel",
+      "idPerson": "",
+      "email": "david.wetzel@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 10mm, 0.72m²"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-01643ma8j",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:44.000Z",
+      "firstName": "Lukas Nils",
+      "lastName": "Tanner",
+      "idPerson": "",
+      "email": "lukas.tanner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 10mm, 0.55m²"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0165p87x7",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:45.000Z",
+      "firstName": "Andrin",
+      "lastName": "Meier",
+      "idPerson": "",
+      "email": "andrin.meier@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 10mm, 0.39m²"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0166q4sva",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:46.000Z",
+      "firstName": "Ndey Iris",
+      "lastName": "Njie Sillah",
+      "idPerson": "",
+      "email": "ndey.njiesillah@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 10mm, 0.76m²"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0167jsbqk",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:02:47.000Z",
+      "firstName": "Jaël Annik",
+      "lastName": "Faedi",
+      "idPerson": "",
+      "email": "jael.faedi@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "MDF 10mm, 1.29m²"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0168kds69",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:48.000Z",
+      "firstName": "Esther",
+      "lastName": "Maul",
+      "idPerson": "",
+      "email": "esther.maul@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 13.9,
+      "notes": []
+    },
+    {
+      "id": "imp2-01690nq4h",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:49.000Z",
+      "firstName": "Levin",
+      "lastName": "Brunner",
+      "idPerson": "",
+      "email": "levin.brunner@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 13.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-0170rf4ad",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:50.000Z",
+      "firstName": "Olivia Anna",
+      "lastName": "Gnehm",
+      "idPerson": "",
+      "email": "olivia.gnehm@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 23.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0171y4p3o",
+      "deviceId": "import",
+      "createdAt": "2026-03-13T08:02:51.000Z",
+      "firstName": "Alexander Manuel",
+      "lastName": "Horvath",
+      "idPerson": "",
+      "email": "alexander.horvath@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 12
+        }
+      ],
+      "plates": [],
+      "total": 58.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0172v23te",
+      "deviceId": "import",
+      "createdAt": "2026-05-11T08:02:52.000Z",
+      "firstName": "Hevi Arife",
+      "lastName": "Öcal",
+      "idPerson": "",
+      "email": "hevi.oecal@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 9
+        }
+      ],
+      "plates": [],
+      "total": 24.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-01738nrfj",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:53.000Z",
+      "firstName": "Sebastian Noa",
+      "lastName": "Graf",
+      "idPerson": "",
+      "email": "sebastian.graf@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 7
+        },
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 39.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-01742m2yp",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:54.000Z",
+      "firstName": "Selina Noemie",
+      "lastName": "Schnell",
+      "idPerson": "",
+      "email": "selina.schnell@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 23
+        }
+      ],
+      "plates": [],
+      "total": 111.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-01753seuq",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:55.000Z",
+      "firstName": "Jaël Annik",
+      "lastName": "Faedi",
+      "idPerson": "",
+      "email": "jael.faedi@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 40.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-01768dg2s",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:56.000Z",
+      "firstName": "Anita",
+      "lastName": "Krause",
+      "idPerson": "",
+      "email": "anita.krause@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 4.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0177xr6v3",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:57.000Z",
+      "firstName": "Gioia",
+      "lastName": "Altherr",
+      "idPerson": "",
+      "email": "gioia.altherr@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 13.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0178qt0ur",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:58.000Z",
+      "firstName": "Sebastian Noa",
+      "lastName": "Graf",
+      "idPerson": "",
+      "email": "sebastian.graf@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-01793rmpo",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:02:59.000Z",
+      "firstName": "Agnesa",
+      "lastName": "Ramadani",
+      "idPerson": "",
+      "email": "agnesa.ramadani@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 7
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        },
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 84.95,
+      "notes": []
+    },
+    {
+      "id": "imp2-01805qpy7",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:00.000Z",
+      "firstName": "Céline",
+      "lastName": "Schriber",
+      "idPerson": "",
+      "email": "celine.schriber@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 8
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 60.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0181zv4v8",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:01.000Z",
+      "firstName": "Timo",
+      "lastName": "Schwendimann",
+      "idPerson": "",
+      "email": "timo.schwendimann@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        }
+      ],
+      "plates": [
+        "5× Leichtstoff Schwarz, 50x70"
+      ],
+      "total": 21.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0182swl24",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:02.000Z",
+      "firstName": "Jonas",
+      "lastName": "Blank",
+      "idPerson": "",
+      "email": "jonas.blank@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 36.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-018339g05",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:03.000Z",
+      "firstName": "Max",
+      "lastName": "Schmid",
+      "idPerson": "",
+      "email": "max.schmid@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 22.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0184qalxz",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:04.000Z",
+      "firstName": "Jean Howard",
+      "lastName": "Waeber",
+      "idPerson": "",
+      "email": "jean.waeber@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "2× MDF 5mm, 30x90"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0185na43u",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:05.000Z",
+      "firstName": "Clara",
+      "lastName": "Ibach",
+      "idPerson": "",
+      "email": "clara.ibach@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 19.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0186tyuax",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:06.000Z",
+      "firstName": "Arnault Sebastian Paul",
+      "lastName": "Graftiaux",
+      "idPerson": "",
+      "email": "arnault.graftiaux@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 10.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0187vq4ff",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:07.000Z",
+      "firstName": "Christina",
+      "lastName": "Meder",
+      "idPerson": "",
+      "email": "christina.meder@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 5.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0188gg2ga",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:08.000Z",
+      "firstName": "Fanny",
+      "lastName": "Gunti",
+      "idPerson": "",
+      "email": "fanny.gunti@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        },
+        {
+          "materialId": "hk-90x60-na",
+          "label": "o. A.",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 0.0,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-na",
+          "label": "o. A.",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 0.0,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 41.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0189t48ci",
+      "deviceId": "import",
+      "createdAt": "2026-05-21T08:03:09.000Z",
+      "firstName": "Viktoriia",
+      "lastName": "Paegle",
+      "idPerson": "",
+      "email": "viktoriia.paegle@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 4.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0190k0vei",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:10.000Z",
+      "firstName": "Fabian",
+      "lastName": "Nützi",
+      "idPerson": "",
+      "email": "fabian.nuetzi@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 9.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0191jjdz0",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:11.000Z",
+      "firstName": "Lena Ida",
+      "lastName": "Gugler",
+      "idPerson": "",
+      "email": "lena.gugler@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 33.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0192pmqy4",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:12.000Z",
+      "firstName": "Ajla",
+      "lastName": "Terzic",
+      "idPerson": "",
+      "email": "ajla.terzic@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.8,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 11.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-01930egm7",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:13.000Z",
+      "firstName": "Auréane Aude Eléa",
+      "lastName": "Gurtner",
+      "idPerson": "",
+      "email": "aureane.gurtner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 6
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 81.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0194r0raq",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:14.000Z",
+      "firstName": "Luisa",
+      "lastName": "Vogelbacher",
+      "idPerson": "",
+      "email": "luisa.vogelbacher@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-90x60-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (90 × 60 cm)",
+          "unitPrice": 0.0,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 0.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0195vm96i",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:15.000Z",
+      "firstName": "Arnault Sebastian Paul",
+      "lastName": "Graftiaux",
+      "idPerson": "",
+      "email": "arnault.graftiaux@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 5.35,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 32.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-019640lb5",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:16.000Z",
+      "firstName": "Michelle Samantha",
+      "lastName": "Jäggi",
+      "idPerson": "",
+      "email": "michelle.jaeggi@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 25.45,
+      "notes": []
+    },
+    {
+      "id": "imp2-0197vdo19",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:17.000Z",
+      "firstName": "Svenja",
+      "lastName": "Borer",
+      "idPerson": "",
+      "email": "svenja.borer1@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 10
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 29.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0198j58sc",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:18.000Z",
+      "firstName": "Lucia",
+      "lastName": "Canabal Korencan",
+      "idPerson": "",
+      "email": "lucia.canabalkorencan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 42.9,
+      "notes": []
+    },
+    {
+      "id": "imp2-01997w1mb",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:19.000Z",
+      "firstName": "Nika",
+      "lastName": "Domljanovic Dogan",
+      "idPerson": "",
+      "email": "nika.domljanovicdogan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 6
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 22.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0200mjzl8",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:20.000Z",
+      "firstName": "Raoul Livio",
+      "lastName": "Trüeb",
+      "idPerson": "",
+      "email": "raoul.trueeb@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 6
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 19.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-02015o0le",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:21.000Z",
+      "firstName": "Sara",
+      "lastName": "Stutz",
+      "idPerson": "",
+      "email": "sara.stutz@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 28.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0202p86wa",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:22.000Z",
+      "firstName": "Maryna",
+      "lastName": "Metsger",
+      "idPerson": "",
+      "email": "maryna.metsger@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 6
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 31.3,
+      "notes": []
+    },
+    {
+      "id": "imp2-0203nogos",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:23.000Z",
+      "firstName": "Ndey Iris",
+      "lastName": "Njie Sillah",
+      "idPerson": "",
+      "email": "ndey.njiesillah@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 38.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-02047a4hs",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:24.000Z",
+      "firstName": "Sophie Helena",
+      "lastName": "Bächli",
+      "idPerson": "",
+      "email": "sophie.baechli@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 2.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0205biuqk",
+      "deviceId": "import",
+      "createdAt": "2026-05-22T08:03:25.000Z",
+      "firstName": "Samuel",
+      "lastName": "Husistein",
+      "idPerson": "",
+      "email": "samuel.husistein@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 2.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0206ng9t6",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:26.000Z",
+      "firstName": "Lukas Nils",
+      "lastName": "Tanner",
+      "idPerson": "",
+      "email": "lukas.tanner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 7
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 24.7,
+      "notes": []
+    },
+    {
+      "id": "imp2-0207s3jhv",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:27.000Z",
+      "firstName": "Olivia Anna",
+      "lastName": "Gnehm",
+      "idPerson": "",
+      "email": "olivia.gnehm@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0208nw9s3",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:28.000Z",
+      "firstName": "Alexander",
+      "lastName": "Scholz",
+      "idPerson": "",
+      "email": "alexander.scholz@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 21.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0209vldjf",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:29.000Z",
+      "firstName": "David",
+      "lastName": "Schori",
+      "idPerson": "",
+      "email": "david.schori@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 19.95,
+      "notes": []
+    },
+    {
+      "id": "imp2-0210fypr3",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:30.000Z",
+      "firstName": "Ajla",
+      "lastName": "Terzic",
+      "idPerson": "",
+      "email": "ajla.terzic@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 29.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-02114xlqp",
+      "deviceId": "import",
+      "createdAt": "2026-05-20T08:03:31.000Z",
+      "firstName": "Thaarugan",
+      "lastName": "Tharmaraja",
+      "idPerson": "",
+      "email": "thaarugan.tharmaraja@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 64.9,
+      "notes": []
+    },
+    {
+      "id": "imp2-0212ze5sd",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:32.000Z",
+      "firstName": "Efe",
+      "lastName": "Arslan",
+      "idPerson": "",
+      "email": "efe.arslan@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 22.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-0213ya51k",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:33.000Z",
+      "firstName": "Bettina Julia",
+      "lastName": "Krack",
+      "idPerson": "",
+      "email": "bettina.krack@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 11.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0214ledrd",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:34.000Z",
+      "firstName": "Anita",
+      "lastName": "Krause",
+      "idPerson": "",
+      "email": "anita.krause@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 10.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0215mgirf",
+      "deviceId": "import",
+      "createdAt": "2026-05-19T08:03:35.000Z",
+      "firstName": "Emilia",
+      "lastName": "Nisius",
+      "idPerson": "",
+      "email": "emilia.nisius@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 12
+        }
+      ],
+      "plates": [],
+      "total": 54.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0216agxzy",
+      "deviceId": "import",
+      "createdAt": "2026-05-19T08:03:36.000Z",
+      "firstName": "William",
+      "lastName": "Devries",
+      "idPerson": "",
+      "email": "william.devries@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 3.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0217ctl5d",
+      "deviceId": "import",
+      "createdAt": "2026-05-19T08:03:37.000Z",
+      "firstName": "Antonio",
+      "lastName": "Bisicchia",
+      "idPerson": "",
+      "email": "antonio.bisicchia@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 38.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0218ed28f",
+      "deviceId": "import",
+      "createdAt": "2026-05-19T08:03:38.000Z",
+      "firstName": "Dominic",
+      "lastName": "Plattner",
+      "idPerson": "",
+      "email": "dominic.plattner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 7
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 38.35,
+      "notes": []
+    },
+    {
+      "id": "imp2-02190iwr4",
+      "deviceId": "import",
+      "createdAt": "2026-05-19T08:03:39.000Z",
+      "firstName": "Maryna",
+      "lastName": "Metsger",
+      "idPerson": "",
+      "email": "maryna.metsger@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 5.35,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 5.35,
+      "notes": []
+    },
+    {
+      "id": "imp2-0220iwy8f",
+      "deviceId": "import",
+      "createdAt": "2026-05-19T08:03:40.000Z",
+      "firstName": "Malena",
+      "lastName": "Canabal Korencan",
+      "idPerson": "",
+      "email": "malena.canabalkorencan@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 21.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0221i2g2p",
+      "deviceId": "import",
+      "createdAt": "2026-05-15T08:03:41.000Z",
+      "firstName": "Noé",
+      "lastName": "González Gómez",
+      "idPerson": "",
+      "email": "noe.gonzalezgomez@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 5
+        }
+      ],
+      "plates": [],
+      "total": 24.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-0222l0oz0",
+      "deviceId": "import",
+      "createdAt": "2026-05-08T08:03:42.000Z",
+      "firstName": "Marion",
+      "lastName": "Hass",
+      "idPerson": "",
+      "email": "marion.hass@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 7
+        },
+        {
+          "materialId": "gk-80x55-2.5",
+          "label": "2.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.9,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 25.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0223vbj4i",
+      "deviceId": "import",
+      "createdAt": "2026-05-11T08:03:43.000Z",
+      "firstName": "Jean Howard",
+      "lastName": "Waeber",
+      "idPerson": "",
+      "email": "jean.waeber@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 27.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0224vx89m",
+      "deviceId": "import",
+      "createdAt": "2026-05-11T08:03:44.000Z",
+      "firstName": "Viktoriia",
+      "lastName": "Paegle",
+      "idPerson": "",
+      "email": "viktoriia.paegle@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 4.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-02251jot5",
+      "deviceId": "import",
+      "createdAt": "2026-05-12T08:03:45.000Z",
+      "firstName": "Isabela",
+      "lastName": "Avila Silva",
+      "idPerson": "",
+      "email": "isabela.avilasilva@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 48.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-02266wekl",
+      "deviceId": "import",
+      "createdAt": "2026-05-12T08:03:46.000Z",
+      "firstName": "Jessica",
+      "lastName": "Denz",
+      "idPerson": "",
+      "email": "jessica.denz@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [],
+      "plates": [
+        "2× MDF 4mm, 60x70"
+      ],
+      "total": 0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0227kmu1j",
+      "deviceId": "import",
+      "createdAt": "2026-05-17T08:03:47.000Z",
+      "firstName": "Viktoriia",
+      "lastName": "Paegle",
+      "idPerson": "",
+      "email": "viktoriia.paegle@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0228elybe",
+      "deviceId": "import",
+      "createdAt": "2026-05-13T08:03:48.000Z",
+      "firstName": "David Marc",
+      "lastName": "Wetzel",
+      "idPerson": "",
+      "email": "david.wetzel@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 36.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0229egpej",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:49.000Z",
+      "firstName": "William",
+      "lastName": "Devries",
+      "idPerson": "",
+      "email": "william.devries@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 1
+        },
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 27.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0230o27so",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:50.000Z",
+      "firstName": "Anne Julie",
+      "lastName": "Mikosch",
+      "idPerson": "",
+      "email": "anne.mikosch@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 27.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-02315ef4g",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:51.000Z",
+      "firstName": "Raphael",
+      "lastName": "Reist",
+      "idPerson": "",
+      "email": "raphael.reist@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 8
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 60.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0232k8gpo",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:52.000Z",
+      "firstName": "Karla",
+      "lastName": "Schätzle",
+      "idPerson": "",
+      "email": "karla.schaetzle@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 16.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-02330d46q",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:53.000Z",
+      "firstName": "Raphael",
+      "lastName": "Reist",
+      "idPerson": "",
+      "email": "raphael.reist@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 8.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0234rcqky",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:54.000Z",
+      "firstName": "Isabela",
+      "lastName": "Avila Silva",
+      "idPerson": "",
+      "email": "isabela.avilasilva@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 19.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0235ufobu",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:55.000Z",
+      "firstName": "Janina Lara",
+      "lastName": "Grunder",
+      "idPerson": "",
+      "email": "janina.grunder@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 16.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-02362qgxv",
+      "deviceId": "import",
+      "createdAt": "2026-05-18T08:03:56.000Z",
+      "firstName": "David Andreas",
+      "lastName": "Vranesic",
+      "idPerson": "",
+      "email": "david.vranesic@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.8,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 3.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0237s8gmk",
+      "deviceId": "import",
+      "createdAt": "2026-05-04T08:03:57.000Z",
+      "firstName": "Florian Lukas Alexander",
+      "lastName": "Hintze",
+      "idPerson": "",
+      "email": "florian.hintze@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 21.45,
+      "notes": []
+    },
+    {
+      "id": "imp2-0238ie1ts",
+      "deviceId": "import",
+      "createdAt": "2026-05-04T08:03:58.000Z",
+      "firstName": "Ndey Iris",
+      "lastName": "Njie Sillah",
+      "idPerson": "",
+      "email": "ndey.njiesillah@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.3",
+          "label": "1.3 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 0.0,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 0.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0239gi6md",
+      "deviceId": "import",
+      "createdAt": "2026-05-04T08:03:59.000Z",
+      "firstName": "Andrin",
+      "lastName": "Meier",
+      "idPerson": "",
+      "email": "andrin.meier@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 14.55,
+      "notes": []
+    },
+    {
+      "id": "imp2-0240uvwm6",
+      "deviceId": "import",
+      "createdAt": "2026-05-07T08:04:00.000Z",
+      "firstName": "Eliza Johanna",
+      "lastName": "Rührig",
+      "idPerson": "",
+      "email": "eliza.ruehrig@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 27.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0241kbp5b",
+      "deviceId": "import",
+      "createdAt": "2026-05-07T08:04:01.000Z",
+      "firstName": "David",
+      "lastName": "Jakob",
+      "idPerson": "",
+      "email": "david.jakob@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 36.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-024286fpf",
+      "deviceId": "import",
+      "createdAt": "2026-05-07T08:04:02.000Z",
+      "firstName": "Solène",
+      "lastName": "Béné",
+      "idPerson": "",
+      "email": "solene.bene@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 20
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-3.0",
+          "label": "3 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 0.0,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 102.5,
+      "notes": []
+    },
+    {
+      "id": "imp2-0243g33hd",
+      "deviceId": "import",
+      "createdAt": "2026-05-15T08:04:03.000Z",
+      "firstName": "Ladina Samira",
+      "lastName": "Thurnherr",
+      "idPerson": "",
+      "email": "ladina.thurnherr@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 4
+        }
+      ],
+      "plates": [],
+      "total": 30.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0244k0dhr",
+      "deviceId": "import",
+      "createdAt": "2026-05-15T08:04:04.000Z",
+      "firstName": "Noé",
+      "lastName": "González Gómez",
+      "idPerson": "",
+      "email": "noe.gonzalezgomez@students.fhnw.ch",
+      "jahreskurs": "Master-Thesis",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.0",
+          "label": "1 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 2.7,
+          "qty": 10
+        }
+      ],
+      "plates": [],
+      "total": 27.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0245npl7a",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:04:05.000Z",
+      "firstName": "Gabriel Fridolin",
+      "lastName": "Germann",
+      "idPerson": "",
+      "email": "gabriel.germann@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 14.25,
+      "notes": []
+    },
+    {
+      "id": "imp2-0246jeb0z",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:04:06.000Z",
+      "firstName": "Thaarugan",
+      "lastName": "Tharmaraja",
+      "idPerson": "",
+      "email": "thaarugan.tharmaraja@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 9
+        }
+      ],
+      "plates": [],
+      "total": 43.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0247h953h",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:04:07.000Z",
+      "firstName": "Tina",
+      "lastName": "Gisin",
+      "idPerson": "",
+      "email": "tina.gisin@students.fhnw.ch",
+      "jahreskurs": "BA 2. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 6.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0248u6l9w",
+      "deviceId": "import",
+      "createdAt": "2026-04-29T08:04:08.000Z",
+      "firstName": "Lena",
+      "lastName": "Bader",
+      "idPerson": "",
+      "email": "lena.bader@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 10
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 75.8,
+      "notes": []
+    },
+    {
+      "id": "imp2-0249u55aa",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:09.000Z",
+      "firstName": "Fabian",
+      "lastName": "Nützi",
+      "idPerson": "",
+      "email": "fabian.nuetzi@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 2
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 17.1,
+      "notes": []
+    },
+    {
+      "id": "imp2-02500mwky",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:10.000Z",
+      "firstName": "Lukas Nils",
+      "lastName": "Tanner",
+      "idPerson": "",
+      "email": "lukas.tanner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 4.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0251ub85e",
+      "deviceId": "import",
+      "createdAt": "2026-05-04T08:04:11.000Z",
+      "firstName": "William",
+      "lastName": "Devries",
+      "idPerson": "",
+      "email": "william.devries@students.fhnw.ch",
+      "jahreskurs": "Master Regels.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-3.0",
+          "label": "3 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 3.1,
+          "qty": 3
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 13.85,
+      "notes": []
+    },
+    {
+      "id": "imp2-0252rkvij",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:12.000Z",
+      "firstName": "Laila",
+      "lastName": "Miarelli",
+      "idPerson": "",
+      "email": "laila.miarelli@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x110-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 110 cm)",
+          "unitPrice": 3.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 3.2,
+      "notes": []
+    },
+    {
+      "id": "imp2-0253g6ec8",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:13.000Z",
+      "firstName": "Auréane Aude Eléa",
+      "lastName": "Gurtner",
+      "idPerson": "",
+      "email": "aureane.gurtner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 4
+        },
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 8
+        }
+      ],
+      "plates": [],
+      "total": 57.0,
+      "notes": []
+    },
+    {
+      "id": "imp2-0254me3o0",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:14.000Z",
+      "firstName": "Beatriz",
+      "lastName": "Oliveira Mourão",
+      "idPerson": "",
+      "email": "beatriz.oliveiramourao@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.5",
+          "label": "2.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 7.15,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 1
+        }
+      ],
+      "plates": [],
+      "total": 23.65,
+      "notes": []
+    },
+    {
+      "id": "imp2-0255mp8af",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:15.000Z",
+      "firstName": "Arnault Sebastian Paul",
+      "lastName": "Graftiaux",
+      "idPerson": "",
+      "email": "arnault.graftiaux@students.fhnw.ch",
+      "jahreskurs": "BA 6. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-1.0",
+          "label": "1 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.5,
+          "qty": 5
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 3
+        },
+        {
+          "materialId": "gk-80x55-1.5",
+          "label": "1.5 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 1.8,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 41.05,
+      "notes": []
+    },
+    {
+      "id": "imp2-0256bx1uc",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:16.000Z",
+      "firstName": "Silvio",
+      "lastName": "Esposito",
+      "idPerson": "",
+      "email": "silvio.esposito@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 3
+        }
+      ],
+      "plates": [],
+      "total": 6.6,
+      "notes": []
+    },
+    {
+      "id": "imp2-0257jd8z2",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:17.000Z",
+      "firstName": "Gian",
+      "lastName": "Kocher",
+      "idPerson": "",
+      "email": "gian.kocher@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 2
+        }
+      ],
+      "plates": [],
+      "total": 4.4,
+      "notes": []
+    },
+    {
+      "id": "imp2-0258w28gc",
+      "deviceId": "import",
+      "createdAt": "2026-04-30T08:04:18.000Z",
+      "firstName": "Lukas Nils",
+      "lastName": "Tanner",
+      "idPerson": "",
+      "email": "lukas.tanner@students.fhnw.ch",
+      "jahreskurs": "BA 4. Sem.",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "gk-80x55-2.0",
+          "label": "2 mm",
+          "group": "GK / Graukarton (80 × 55 cm)",
+          "unitPrice": 2.2,
+          "qty": 6
+        }
+      ],
+      "plates": [],
+      "total": 13.2,
+      "notes": []
     }
   ]
 }
