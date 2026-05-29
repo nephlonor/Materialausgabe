@@ -278,31 +278,6 @@
       "notes": []
     },
     {
-      "id": "mpq6qietmavg0z",
-      "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
-      "createdAt": "2026-05-29T00:30:03.701Z",
-      "firstName": "Florian",
-      "lastName": "Bertram",
-      "idPerson": "123456789",
-      "email": "florian.bertram@fhnw.ch",
-      "jahreskurs": "Test",
-      "paymentType": "institut",
-      "items": [],
-      "plates": [
-        "MDF 10mm"
-      ],
-      "total": 0,
-      "notes": [
-        {
-          "id": "mpqkcehg0mpz96",
-          "text": "6B",
-          "author": "Martin Ausgabe",
-          "authorDeviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
-          "createdAt": "2026-05-29T06:51:00.052Z"
-        }
-      ]
-    },
-    {
       "id": "imp000001valu",
       "deviceId": "import",
       "createdAt": "2026-05-27T09:00:00.000Z",
