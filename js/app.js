@@ -13,14 +13,15 @@ const PAYMENT_LABEL = { privat: "Privat", institut: "Institut" };
 
 function platesCardHtml(plates, opts = {}) {
   const idPrefix = opts.idPrefix || "p";
+  const hint = opts.hint || "Dies ist keine automatische Bestellung, hier nur bestellte Platten verbuchen.";
   return `
     <div class="card plates-card">
       <h2>Platten Zuschnitte</h2>
-      <p class="muted">Dies ist keine automatische Bestellung, hier nur bestellte Platten verbuchen.</p>
+      <p class="muted">${esc(hint)}</p>
       <div id="${idPrefix}-list">
         ${plates.map((t, i) => plateRowHtml(t, i, idPrefix)).join("")}
       </div>
-      <button type="button" class="btn block" data-plate-add="${idPrefix}" style="margin-top:8px">+ Weiteren Zuschnitt</button>
+      ${opts.noAdd ? "" : `<button type="button" class="btn block" data-plate-add="${idPrefix}" style="margin-top:8px">+ Weiteren Zuschnitt</button>`}
     </div>
   `;
 }
@@ -856,7 +857,8 @@ async function editBooking(id) {
   const b = state.bookings.find(x => x.id === id);
   if (!b) return;
   let editedPaymentType = b.paymentType || "privat";
-  const existingPlates = Array.isArray(b.plates) ? b.plates.filter(Boolean) : [];
+  const hasPlates = Array.isArray(b.plates) && b.plates.filter(Boolean).length > 0;
+  const editPlates = { plates: hasPlates ? [...b.plates.filter(Boolean)] : [] };
   const wrap = document.createElement("div");
   wrap.innerHTML = `<p class="muted" style="margin-top:0">Mengen anpassen (0 = entfernen)</p>` +
     b.items.map((it, i) => `
@@ -872,14 +874,11 @@ async function editBooking(id) {
         </div>
       </div>
     `).join("") +
-    (existingPlates.length ? `
-      <div class="card plates-card">
-        <h2>Platten Zuschnitte</h2>
-        <p class="muted">Können bei bestehenden Buchungen nicht mehr geändert werden.</p>
-        <ul style="margin:0; padding-left:18px; font-size:13px">
-          ${existingPlates.map(p => `<li>${esc(p)}</li>`).join("")}
-        </ul>
-      </div>` : "") +
+    (hasPlates ? platesCardHtml(editPlates.plates, {
+      idPrefix: "p-edit",
+      noAdd: true,
+      hint: "Bestehende Zuschnitte können angepasst oder entfernt werden. Neue Zuschnitte sind nur bei neuen Buchungen möglich.",
+    }) : "") +
     `<div class="payment-row" style="margin-top:10px">
        <span class="lbl">Bezahlt durch</span>
        ${paymentToggleHtml(editedPaymentType, "pt-edit")}
@@ -902,6 +901,7 @@ async function editBooking(id) {
     inp.oninput = () => { newQtys[+inp.dataset.i] = Math.max(0, parseInt(inp.value || "0", 10)); };
   });
   bindPaymentToggle(wrap, (pt) => { editedPaymentType = pt; });
+  if (hasPlates) bindPlatesControl(wrap, editPlates, "p-edit");
 
   let patch = null;
   const ok = await modal({
@@ -912,9 +912,11 @@ async function editBooking(id) {
       const newItems = b.items
         .map((it, i) => ({ ...it, qty: newQtys[i] }))
         .filter(it => it.qty > 0);
-      if (!newItems.length && !existingPlates.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
+      const newPlates = hasPlates ? platesNonEmpty(editPlates.plates) : (Array.isArray(b.plates) ? b.plates : []);
+      if (!newItems.length && newPlates.length === 0) { toast("Mindestens eine Position oder ein Zuschnitt nötig (oder löschen)", "error"); return false; }
       patch = {
         items: newItems,
+        plates: newPlates,
         total: newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0),
         paymentType: editedPaymentType,
       };
