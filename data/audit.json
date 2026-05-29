@@ -948,6 +948,26 @@
         "total": 0,
         "notes": []
       }
+    },
+    {
+      "id": "mpqkcfmt403zch",
+      "timestamp": "2026-05-29T06:51:01.541Z",
+      "action": "note",
+      "bookingId": "mpq6qietmavg0z",
+      "actor": {
+        "deviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
+        "firstName": "Martin",
+        "lastName": "Ausgabe",
+        "idPerson": "1234321",
+        "email": "Martin@Fhnw.ch"
+      },
+      "note": {
+        "id": "mpqkcehg0mpz96",
+        "text": "6B",
+        "author": "Martin Ausgabe",
+        "authorDeviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
+        "createdAt": "2026-05-29T06:51:00.052Z"
+      }
     }
   ]
 }
