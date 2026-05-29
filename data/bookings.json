@@ -326,39 +326,6 @@
       "notes": []
     },
     {
-      "id": "mpqkyifif0ao0q",
-      "deviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
-      "createdAt": "2026-05-29T07:08:11.598Z",
-      "firstName": "Florian",
-      "lastName": "Bertram 2",
-      "idPerson": "1234321",
-      "email": "Martin@Fhnw.ch",
-      "jahreskurs": "Test",
-      "paymentType": "institut",
-      "items": [
-        {
-          "materialId": "gk-80x55-1.0",
-          "label": "1 mm",
-          "group": "GK / Graukarton (80 × 55 cm)",
-          "unitPrice": 1.5,
-          "qty": 2
-        },
-        {
-          "materialId": "gk-80x55-2.5",
-          "label": "2.5 mm",
-          "group": "GK / Graukarton (80 × 55 cm)",
-          "unitPrice": 2.9,
-          "qty": 8
-        }
-      ],
-      "plates": [
-        "MDF 5mm, 100x50"
-      ],
-      "total": 26.2,
-      "notes": [],
-      "updatedAt": "2026-05-29T07:08:43.397Z"
-    },
-    {
       "id": "imp000001valu",
       "deviceId": "import",
       "createdAt": "2026-05-27T09:00:00.000Z",
@@ -715,7 +682,7 @@
         }
       ],
       "plates": [],
-      "total": 4.0,
+      "total": 4,
       "notes": []
     },
     {
