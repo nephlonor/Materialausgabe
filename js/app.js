@@ -256,6 +256,27 @@ async function exportAuditLog() {
 window.exportAuditLog = exportAuditLog;
 window.loadAuditLog = () => GH.loadAudit();
 
+async function exportBookingList() {
+  try {
+    const data = await GH.loadAll();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `buchungsliste-${new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-")}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast(`${(data.bookings || []).length} Buchungen exportiert`, "success");
+    return data;
+  } catch (e) {
+    console.error(e);
+    toast("Buchungslisten-Export fehlgeschlagen: " + e.message, "error");
+  }
+}
+window.exportBookingList = exportBookingList;
+
 function ensureDeviceId() {
   if (state.deviceId) return;
   const id = (crypto.randomUUID && crypto.randomUUID()) ||
@@ -384,12 +405,14 @@ function renderProfile(initial) {
 // ================= Settings =================
 async function openSettings() {
   const wrap = document.createElement("div");
+  const exportBtns = hasFullAccess() ? `
+      <button id="s-export-bookings" class="btn block">Buchungsliste export</button>
+      <button id="s-export-audit" class="btn block">Audit-Log exportieren</button>` : "";
   wrap.innerHTML = `
     <p class="muted" style="margin-top:0">Dein Gerät hat eine automatisch erzeugte ID. Buchungen von diesem Gerät kannst du bearbeiten.</p>
     <div class="hint">Geräte-ID: <code>${esc(state.deviceId || "—")}</code></div>
     <div class="btn-row" style="flex-direction:column">
-      <button id="s-edit-profile" class="btn block">Profil bearbeiten</button>
-      <button id="s-export-audit" class="btn block">Audit-Log exportieren</button>
+      <button id="s-edit-profile" class="btn block">Profil bearbeiten</button>${exportBtns}
       <button id="s-logout" class="btn danger block">Gerät zurücksetzen und mit neuer ID verknüpfen</button>
     </div>
     <p class="muted" style="font-size:12px;margin:8px 0 0">Bereits erfasste Buchungen bleiben erhalten, können jedoch nicht mehr angepasst werden.</p>
@@ -398,9 +421,10 @@ async function openSettings() {
     hide("modal");
     renderProfile(false);
   };
-  wrap.querySelector("#s-export-audit").onclick = () => {
-    exportAuditLog();
-  };
+  const exportBookingsBtn = wrap.querySelector("#s-export-bookings");
+  if (exportBookingsBtn) exportBookingsBtn.onclick = () => { exportBookingList(); };
+  const exportAuditBtn = wrap.querySelector("#s-export-audit");
+  if (exportAuditBtn) exportAuditBtn.onclick = () => { exportAuditLog(); };
   wrap.querySelector("#s-logout").onclick = async () => {
     if (confirm("Gerät zurücksetzen und mit neuer ID verknüpfen? Bereits erfasste Buchungen bleiben erhalten, können jedoch nicht mehr angepasst werden.")) {
       localStorage.removeItem(LS.profile);
