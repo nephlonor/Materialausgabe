@@ -22,18 +22,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inject GitHub token into config
+      - name: Inject GitHub token and build id
         env:
           MA_GITHUB_TOKEN: ${{ secrets.MA_GITHUB_TOKEN }}
+          GITHUB_SHA: ${{ github.sha }}
         run: |
           if [ -z "$MA_GITHUB_TOKEN" ]; then
             echo "::warning::MA_GITHUB_TOKEN secret is not set – bookings will not work."
           fi
-          python3 -c "
+          export BUILD_ID="${GITHUB_SHA:0:7}-$(date +%s)"
+          echo "Build id: $BUILD_ID"
+          python3 - <<'PY'
           import os, pathlib
+          token = os.environ.get('MA_GITHUB_TOKEN', '')
+          build_id = os.environ['BUILD_ID']
           p = pathlib.Path('js/config.js')
-          p.write_text(p.read_text().replace('__MA_TOKEN__', os.environ.get('MA_GITHUB_TOKEN', '')))
-          "
+          p.write_text(p.read_text().replace('__MA_TOKEN__', token))
+          p = pathlib.Path('index.html')
+          p.write_text(p.read_text().replace('__BUILD_ID__', build_id))
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
