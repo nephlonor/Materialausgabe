@@ -1200,6 +1200,94 @@
         "plates": [],
         "updatedAt": "2026-05-29T07:56:45.207Z"
       }
+    },
+    {
+      "id": "mpqmp2y5gapk3m",
+      "timestamp": "2026-05-29T07:56:50.861Z",
+      "action": "update",
+      "bookingId": "mpq54jb37is0xh",
+      "actor": {
+        "deviceId": "5bd5b0ee-cafa-4c1b-b818-961a373029bb",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "before": {
+        "id": "mpq54jb37is0xh",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:44:58.815Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "items": [
+          {
+            "materialId": "gk-80x55-2.5",
+            "label": "2.5 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 2.9,
+            "qty": 1
+          },
+          {
+            "materialId": "hk-90x60-2.0",
+            "label": "2 mm",
+            "group": "HK / Holzkarton (90 × 60 cm)",
+            "unitPrice": 4.85,
+            "qty": 30
+          }
+        ],
+        "total": 148.4,
+        "notes": [
+          {
+            "id": "mpq56brv36j33r",
+            "text": "kosten teilen mit Martin Testosteron",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-28T23:46:22.363Z"
+          }
+        ]
+      },
+      "after": {
+        "id": "mpq54jb37is0xh",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:44:58.815Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "items": [
+          {
+            "materialId": "gk-80x55-2.5",
+            "label": "2.5 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 2.9,
+            "qty": 1
+          },
+          {
+            "materialId": "hk-90x60-2.0",
+            "label": "2 mm",
+            "group": "HK / Holzkarton (90 × 60 cm)",
+            "unitPrice": 4.85,
+            "qty": 30
+          }
+        ],
+        "total": 148.4,
+        "notes": [
+          {
+            "id": "mpq56brv36j33r",
+            "text": "kosten teilen mit Martin Testosteron",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-28T23:46:22.363Z"
+          }
+        ],
+        "plates": [],
+        "paymentType": "institut",
+        "updatedAt": "2026-05-29T07:56:49.972Z"
+      }
     }
   ]
 }
