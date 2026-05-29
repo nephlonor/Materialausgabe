@@ -1897,6 +1897,50 @@
         "paymentType": "institut",
         "updatedAt": "2026-05-29T07:56:49.972Z"
       }
+    },
+    {
+      "id": "mpqs7p3hstpezk",
+      "timestamp": "2026-05-29T10:31:17.453Z",
+      "action": "delete",
+      "bookingId": "mpqrydihmgoiq5",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpqrydihmgoiq5",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-29T10:24:02.537Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "paymentType": "privat",
+        "items": [
+          {
+            "materialId": "gk-80x55-1.0",
+            "label": "1 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 1.5,
+            "qty": 1
+          }
+        ],
+        "plates": [],
+        "total": 1.5,
+        "notes": [
+          {
+            "id": "mpqryo0jonm18l",
+            "text": "testbuchung",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-29T10:24:16.147Z"
+          }
+        ]
+      }
     }
   ]
 }
