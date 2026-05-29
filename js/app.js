@@ -7,6 +7,9 @@ const state = {
   plates: [""],         // Platten Zuschnitte (Freitext-Liste)
   paymentType: "privat",// "privat" | "institut"
   bookings: [],         // alle Buchungen vom Server
+  searchListing: "",    // Suchstring in Buchungsliste
+  searchPerson: "",     // Suchstring in Übersicht pro Person
+  ppOpen: false,        // Übersicht pro Person aufgeklappt?
 };
 
 const PAYMENT_LABEL = { privat: "Privat", institut: "Institut" };
@@ -699,28 +702,53 @@ async function refreshBookings() {
   }
 }
 
+function bookingSearchHaystack(b) {
+  const parts = [
+    b.firstName, b.lastName, b.idPerson, b.email, b.jahreskurs,
+    b.paymentType, b.guest ? "gast gastbuchung" : "",
+    ...(Array.isArray(b.items) ? b.items.flatMap(i => [i.group, i.label]) : []),
+    ...(Array.isArray(b.plates) ? b.plates : []),
+    ...(Array.isArray(b.notes) ? b.notes.flatMap(n => [n.text, n.author]) : []),
+  ];
+  return parts.filter(Boolean).join(" · ").toLowerCase();
+}
+
+function matchesSearch(b, q) {
+  if (!q) return true;
+  return bookingSearchHaystack(b).includes(q.toLowerCase());
+}
+
 function renderList() {
   document.getElementById("page-title").textContent = "Buchungsliste";
   const main = document.getElementById("main");
   main.innerHTML = `
-    <div class="card" style="display:flex;justify-content:space-between;align-items:center;">
-      <div><b>${state.bookings.length}</b> <span class="muted">Buchungen gesamt</span></div>
-      <button id="reload" class="btn">Neu laden</button>
-    </div>
     ${perPersonSummaryHtml()}
+    <div class="card search-card">
+      <input id="search-listing" class="search-input" type="search" placeholder="Suchen … (Name, ID, Material, Notiz, …)" value="${esc(state.searchListing || "")}" autocomplete="off" />
+    </div>
     <div id="list" class="booking-list"></div>
   `;
-  document.getElementById("reload").onclick = async () => {
-    toast("Lade …");
-    await refreshBookings();
-    toast("Aktualisiert", "success");
-  };
+  const searchEl = document.getElementById("search-listing");
+  if (searchEl) {
+    searchEl.oninput = (e) => {
+      state.searchListing = e.target.value;
+      renderListContent();
+    };
+  }
+  bindPerPersonInteractions();
+  renderListContent();
+}
+
+function renderListContent() {
   const list = document.getElementById("list");
-  if (!state.bookings.length) {
-    list.innerHTML = `<div class="empty">Noch keine Buchungen.</div>`;
+  if (!list) return;
+  const q = (state.searchListing || "").trim();
+  const filtered = state.bookings.filter(b => matchesSearch(b, q));
+  const sorted = [...filtered].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  if (!sorted.length) {
+    list.innerHTML = `<div class="empty">${q ? "Keine Treffer." : "Noch keine Buchungen."}</div>`;
     return;
   }
-  const sorted = [...state.bookings].sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   list.innerHTML = sorted.map(b => bookingCardHtml(b, { clickToEdit: true })).join("");
   bindBookingActions(list, { clickToEdit: true });
 }

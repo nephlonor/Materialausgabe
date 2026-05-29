@@ -475,6 +475,28 @@ input:focus, select:focus, textarea:focus {
 }
 .payment-row .lbl { color: var(--text-dim); font-size: 13px; }
 
+.search-card { padding: 10px; }
+.search-input {
+  width: 100%;
+  background: var(--bg-elev-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+}
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79,140,255,0.15);
+}
+.per-person .search-input { margin-top: 12px; }
+
+.pp-row { cursor: pointer; transition: background 0.12s; }
+.pp-row:hover { background: var(--bg-elev-2); }
+.pp-name-clickable { color: var(--accent); }
+
 .per-person summary {
   cursor: pointer;
   list-style: none;
