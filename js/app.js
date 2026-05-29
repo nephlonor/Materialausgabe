@@ -773,22 +773,59 @@ function perPersonSummaryHtml() {
   const sorted = [...groups.values()].sort((a, b) => a.name.localeCompare(b.name));
   const totals = sorted.reduce((acc, g) => ({ privat: acc.privat + g.privat, institut: acc.institut + g.institut }), { privat: 0, institut: 0 });
   return `
-    <details class="card per-person">
+    <details class="card per-person" ${state.ppOpen ? "open" : ""} id="per-person-details">
       <summary><b>Übersicht pro Person</b> <span class="muted">— Privat ${formatCHF(totals.privat)} · Institut ${formatCHF(totals.institut)}</span></summary>
+      <input id="search-person" class="search-input" type="search" placeholder="Person suchen …" value="${esc(state.searchPerson || "")}" autocomplete="off" />
       <table class="pp-table">
         <thead><tr><th>Person</th><th>Privat</th><th>Institut</th></tr></thead>
         <tbody>
-          ${sorted.map(g => `
-            <tr>
-              <td><div class="pp-name">${esc(g.name)}</div><div class="pp-id">ID ${esc(g.idPerson)} · ${g.count} Buchung${g.count === 1 ? "" : "en"}</div></td>
+          ${sorted.map(g => {
+            const hay = `${g.name} ${g.idPerson}`.toLowerCase();
+            return `
+            <tr class="pp-row" data-search="${esc(hay)}" data-idperson="${esc(g.idPerson)}" data-name="${esc(g.name)}">
+              <td><div class="pp-name pp-name-clickable">${esc(g.name)}</div><div class="pp-id">ID ${esc(g.idPerson)} · ${g.count} Buchung${g.count === 1 ? "" : "en"}</div></td>
               <td class="num">${formatCHF(g.privat)}</td>
               <td class="num">${formatCHF(g.institut)}</td>
-            </tr>
-          `).join("")}
+            </tr>`;
+          }).join("")}
         </tbody>
       </table>
     </details>
   `;
+}
+
+function bindPerPersonInteractions() {
+  const det = document.getElementById("per-person-details");
+  if (det) {
+    det.addEventListener("toggle", () => { state.ppOpen = det.open; });
+  }
+  const searchInput = document.getElementById("search-person");
+  if (searchInput) {
+    const applyFilter = () => {
+      const q = (state.searchPerson || "").toLowerCase().trim();
+      document.querySelectorAll(".pp-row").forEach(row => {
+        const hay = row.dataset.search || "";
+        row.style.display = (!q || hay.includes(q)) ? "" : "none";
+      });
+    };
+    searchInput.oninput = (e) => {
+      state.searchPerson = e.target.value;
+      applyFilter();
+    };
+    searchInput.onclick = (e) => e.stopPropagation();
+    applyFilter();
+  }
+  document.querySelectorAll(".pp-row").forEach(row => {
+    row.onclick = () => {
+      const id = row.dataset.idperson;
+      state.searchListing = id || row.dataset.name || "";
+      const input = document.getElementById("search-listing");
+      if (input) input.value = state.searchListing;
+      renderListContent();
+      const listEl = document.getElementById("list");
+      if (listEl) listEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+  });
 }
 
 function isOwnBooking(b) {
