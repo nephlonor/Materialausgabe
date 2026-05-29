@@ -1536,6 +1536,26 @@
         "plates": [],
         "updatedAt": "2026-05-29T07:56:45.207Z"
       }
+    },
+    {
+      "id": "mpqpo23g3u545x",
+      "timestamp": "2026-05-29T09:20:01.948Z",
+      "action": "note-delete",
+      "bookingId": "mpq5gl8wzkpl3v",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "id": "mpq5kpn7nbfcn2",
+        "text": "bezahlt",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:57:33.523Z"
+      }
     }
   ]
 }
