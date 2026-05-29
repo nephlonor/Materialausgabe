@@ -1749,6 +1749,26 @@
           }
         ]
       }
+    },
+    {
+      "id": "mpqpp79ce9oy94",
+      "timestamp": "2026-05-29T09:20:55.296Z",
+      "action": "note-delete",
+      "bookingId": "mpq54jb37is0xh",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "note": {
+        "id": "mpq56brv36j33r",
+        "text": "kosten teilen mit Martin Testosteron",
+        "author": "Florian Bertram",
+        "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:46:22.363Z"
+      }
     }
   ]
 }
