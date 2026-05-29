@@ -145,14 +145,16 @@ const GH = {
     return result;
   },
 
-  async updateBooking(bookingId, deviceId, patch, actor) {
+  async updateBooking(bookingId, deviceId, idPerson, patch, actor) {
     let before = null, after = null;
     const result = await this._withRetry((data) => {
       const i = data.bookings.findIndex(b => b.id === bookingId);
       if (i === -1) throw new Error("Buchung nicht gefunden");
-      if (data.bookings[i].deviceId !== deviceId) throw new Error("Keine Berechtigung");
-      before = JSON.parse(JSON.stringify(data.bookings[i]));
-      data.bookings[i] = { ...data.bookings[i], ...patch, updatedAt: new Date().toISOString() };
+      const b = data.bookings[i];
+      const allowed = b.deviceId === deviceId || (idPerson && b.idPerson === idPerson);
+      if (!allowed) throw new Error("Keine Berechtigung");
+      before = JSON.parse(JSON.stringify(b));
+      data.bookings[i] = { ...b, ...patch, updatedAt: new Date().toISOString() };
       after = JSON.parse(JSON.stringify(data.bookings[i]));
       return data;
     }, `Buchung ${bookingId} angepasst`);
@@ -167,13 +169,15 @@ const GH = {
     return result;
   },
 
-  async deleteBooking(bookingId, deviceId, actor) {
+  async deleteBooking(bookingId, deviceId, idPerson, actor) {
     let removed = null;
     const result = await this._withRetry((data) => {
       const i = data.bookings.findIndex(b => b.id === bookingId);
       if (i === -1) throw new Error("Buchung nicht gefunden");
-      if (data.bookings[i].deviceId !== deviceId) throw new Error("Keine Berechtigung");
-      removed = JSON.parse(JSON.stringify(data.bookings[i]));
+      const b = data.bookings[i];
+      const allowed = b.deviceId === deviceId || (idPerson && b.idPerson === idPerson);
+      if (!allowed) throw new Error("Keine Berechtigung");
+      removed = JSON.parse(JSON.stringify(b));
       data.bookings.splice(i, 1);
       return data;
     }, `Buchung ${bookingId} gelöscht`);

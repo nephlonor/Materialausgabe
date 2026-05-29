@@ -665,8 +665,15 @@ function perPersonSummaryHtml() {
   `;
 }
 
+function isOwnBooking(b) {
+  if (!b) return false;
+  if (b.deviceId && b.deviceId === state.deviceId) return true;
+  if (state.profile && state.profile.idPerson && b.idPerson === state.profile.idPerson) return true;
+  return false;
+}
+
 function bookingCardHtml(b, opts = {}) {
-  const own = !b.guest && b.deviceId && b.deviceId === state.deviceId;
+  const own = isOwnBooking(b);
   const date = new Date(b.createdAt);
   const when = date.toLocaleString("de-CH", { dateStyle: "short", timeStyle: "short" });
   const notes = Array.isArray(b.notes) ? b.notes : [];
@@ -686,7 +693,7 @@ function bookingCardHtml(b, opts = {}) {
       }).join("")}
     </div>` : "";
   const tags = [];
-  if (b.guest) tags.push(`<span class="tag tag-guest">Gast</span>`);
+  if (b.guest) tags.push(`<span class="tag tag-guest">Gastbuchung</span>`);
   if (own) tags.push(`<span class="tag tag-own">Eigene</span>`);
   const pt = b.paymentType || "privat";
   tags.push(`<span class="tag tag-pt tag-pt-${pt}">${esc(PAYMENT_LABEL[pt] || pt)}</span>`);
@@ -806,7 +813,7 @@ function renderEdit() {
   document.getElementById("page-title").textContent = "Buchungen anpassen";
   const main = document.getElementById("main");
   const own = state.bookings
-    .filter(b => b.deviceId && b.deviceId === state.deviceId)
+    .filter(b => isOwnBooking(b))
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   const totals = own.reduce((acc, b) => {
     const pt = b.paymentType === "institut" ? "institut" : "privat";
@@ -925,7 +932,7 @@ async function deleteBooking(id) {
   });
   if (!ok) return;
   try {
-    await GH.deleteBooking(id, state.deviceId, currentActor());
+    await GH.deleteBooking(id, state.deviceId, state.profile && state.profile.idPerson, currentActor());
     toast("Gelöscht", "success");
     await refreshBookings();
   } catch (e) {
