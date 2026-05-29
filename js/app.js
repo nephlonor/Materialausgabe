@@ -92,6 +92,7 @@ function bindPaymentToggle(container, onChange) {
 const LS = {
   profile: "ma.profile.v1",
   deviceId: "ma.deviceId.v1",
+  lastGuest: "ma.lastGuest.v1",
 };
 
 // Boot
@@ -333,7 +334,6 @@ function renderBook() {
     <div class="card">
       <h2>Eingeloggt als ${esc(state.profile.firstName)} ${esc(state.profile.lastName)}</h2>
       <p class="muted">Wähle Materialien und Mengen. Mehrfachauswahl möglich.</p>
-      <button id="guest-btn" class="btn block" style="margin-top:10px">Eine Gastbuchung tätigen</button>
     </div>
     ${warnHtml}
     ${groupsHtml}
@@ -345,6 +345,7 @@ function renderBook() {
       </div>
       <div class="total"><span class="lbl">Total</span><span id="total" class="val">${formatCHF(0)}</span></div>
       <button id="book-btn" class="btn primary block" disabled>Buchen</button>
+      <button id="guest-btn" class="btn neutral block" style="margin-top:8px" disabled>Eine Gastbuchung tätigen</button>
     </div>
   `;
   main.querySelectorAll(".qty-control").forEach(c => bindQty(c));
@@ -404,8 +405,11 @@ function updateTotal() {
   const t = cartTotal();
   const el = document.getElementById("total");
   if (el) el.textContent = formatCHF(t);
+  const hasContent = cartItemCount() > 0 || platesNonEmpty(state.plates).length > 0;
   const btn = document.getElementById("book-btn");
-  if (btn) btn.disabled = cartItemCount() === 0 && platesNonEmpty(state.plates).length === 0;
+  if (btn) btn.disabled = !hasContent;
+  const gbtn = document.getElementById("guest-btn");
+  if (gbtn) gbtn.disabled = !hasContent;
 }
 
 async function submitGuestBooking() {
@@ -418,14 +422,19 @@ async function submitGuestBooking() {
     toast("Buchungs-Token fehlt – siehe Hinweis oben", "error");
     return;
   }
+  let prefill = {};
+  try {
+    const raw = localStorage.getItem(LS.lastGuest);
+    if (raw) prefill = JSON.parse(raw) || {};
+  } catch {}
   const wrap = document.createElement("div");
   wrap.innerHTML = `
-    <p class="muted" style="margin-top:0">Daten des Gastes einmalig eingeben. Nach der Bestätigung kann die Buchung <b>nicht mehr angepasst</b> werden.</p>
-    <label class="field"><span>Vorname *</span><input id="g-first" type="text" autocomplete="off" /></label>
-    <label class="field"><span>Nachname *</span><input id="g-last" type="text" autocomplete="off" /></label>
-    <label class="field"><span>ID-Person *</span><input id="g-id" type="text" inputmode="numeric" autocomplete="off" /></label>
-    <label class="field"><span>E-Mail *</span><input id="g-email" type="email" autocomplete="off" /></label>
-    <label class="field"><span>Jahreskurs *</span><input id="g-kurs" type="text" autocomplete="off" /></label>
+    <p class="muted" style="margin-top:0">Daten des Gastes eingeben. Nach der Bestätigung kann die Buchung <b>nicht mehr angepasst</b> werden.</p>
+    <label class="field"><span>Vorname *</span><input id="g-first" type="text" autocomplete="off" value="${esc(prefill.firstName || "")}" /></label>
+    <label class="field"><span>Nachname *</span><input id="g-last" type="text" autocomplete="off" value="${esc(prefill.lastName || "")}" /></label>
+    <label class="field"><span>ID-Person *</span><input id="g-id" type="text" inputmode="numeric" autocomplete="off" value="${esc(prefill.idPerson || "")}" /></label>
+    <label class="field"><span>E-Mail *</span><input id="g-email" type="email" autocomplete="off" value="${esc(prefill.email || "")}" /></label>
+    <label class="field"><span>Jahreskurs *</span><input id="g-kurs" type="text" autocomplete="off" value="${esc(prefill.jahreskurs || "")}" /></label>
   `;
   const guest = {};
   const ok = await modal({
@@ -496,6 +505,7 @@ async function submitGuestBooking() {
   };
   try {
     await GH.addBooking(booking, currentActor());
+    try { localStorage.setItem(LS.lastGuest, JSON.stringify(guest)); } catch {}
     toast("Gastbuchung gespeichert", "success");
     state.cart = {};
     state.plates = [""];

@@ -180,6 +180,8 @@ input:focus, select:focus, textarea:focus {
 .btn.primary:hover:not(:disabled) { background: var(--accent-hov); border-color: var(--accent-hov); }
 .btn.danger { background: transparent; border-color: var(--danger); color: var(--danger); }
 .btn.ghost { background: transparent; }
+.btn.neutral { background: var(--bg-elev-2); color: var(--text); border-color: var(--border); }
+.btn.neutral:hover:not(:disabled) { background: var(--bg-elev); }
 .btn.block { width: 100%; }
 .btn-row { display: flex; gap: 10px; margin-top: 6px; }
 
