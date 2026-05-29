@@ -918,6 +918,36 @@
         "total": 73.1,
         "notes": []
       }
+    },
+    {
+      "id": "mpq6qju47dv6sh",
+      "timestamp": "2026-05-29T00:30:05.548Z",
+      "action": "create",
+      "bookingId": "mpq6qietmavg0z",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpq6qietmavg0z",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-29T00:30:03.701Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "paymentType": "institut",
+        "items": [],
+        "plates": [
+          "MDF 10mm"
+        ],
+        "total": 0,
+        "notes": []
+      }
     }
   ]
 }
