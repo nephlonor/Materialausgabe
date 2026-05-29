@@ -710,7 +710,7 @@ function bookingSearchHaystack(b) {
     ...(Array.isArray(b.plates) ? b.plates : []),
     ...(Array.isArray(b.notes) ? b.notes.flatMap(n => [n.text, n.author]) : []),
   ];
-  return parts.filter(Boolean).join(" · ").toLowerCase();
+  return parts.filter(Boolean).join(" ").toLowerCase();
 }
 
 function matchesSearch(b, q) {
@@ -724,15 +724,31 @@ function renderList() {
   main.innerHTML = `
     ${perPersonSummaryHtml()}
     <div class="card search-card">
-      <input id="search-listing" class="search-input" type="search" placeholder="Suchen … (Name, ID, Material, Notiz, …)" value="${esc(state.searchListing || "")}" autocomplete="off" />
+      <div class="search-wrap">
+        <input id="search-listing" class="search-input" type="search" placeholder="Suchen … (Name, ID, Material, Notiz, …)" value="${esc(state.searchListing || "")}" autocomplete="off" />
+        <button type="button" class="search-clear" id="search-listing-clear" aria-label="Suche löschen" ${state.searchListing ? "" : "hidden"}>×</button>
+      </div>
     </div>
     <div id="list" class="booking-list"></div>
   `;
   const searchEl = document.getElementById("search-listing");
+  const clearEl = document.getElementById("search-listing-clear");
+  const syncClear = () => { if (clearEl) clearEl.hidden = !searchEl.value; };
   if (searchEl) {
     searchEl.oninput = (e) => {
       state.searchListing = e.target.value;
+      syncClear();
       renderListContent();
+    };
+    searchEl.onfocus = (e) => { if (e.target.value) e.target.select(); };
+  }
+  if (clearEl) {
+    clearEl.onclick = () => {
+      state.searchListing = "";
+      searchEl.value = "";
+      syncClear();
+      renderListContent();
+      searchEl.focus();
     };
   }
   bindPerPersonInteractions();
@@ -775,7 +791,10 @@ function perPersonSummaryHtml() {
   return `
     <details class="card per-person" ${state.ppOpen ? "open" : ""} id="per-person-details">
       <summary><b>Übersicht pro Person</b> <span class="muted">— Privat ${formatCHF(totals.privat)} · Institut ${formatCHF(totals.institut)}</span></summary>
-      <input id="search-person" class="search-input" type="search" placeholder="Person suchen …" value="${esc(state.searchPerson || "")}" autocomplete="off" />
+      <div class="search-wrap">
+        <input id="search-person" class="search-input" type="search" placeholder="Person suchen …" value="${esc(state.searchPerson || "")}" autocomplete="off" />
+        <button type="button" class="search-clear" id="search-person-clear" aria-label="Suche löschen" ${state.searchPerson ? "" : "hidden"}>×</button>
+      </div>
       <table class="pp-table">
         <thead><tr><th>Person</th><th>Privat</th><th>Institut</th></tr></thead>
         <tbody>
@@ -800,6 +819,7 @@ function bindPerPersonInteractions() {
     det.addEventListener("toggle", () => { state.ppOpen = det.open; });
   }
   const searchInput = document.getElementById("search-person");
+  const personClear = document.getElementById("search-person-clear");
   if (searchInput) {
     const applyFilter = () => {
       const q = (state.searchPerson || "").toLowerCase().trim();
@@ -807,20 +827,37 @@ function bindPerPersonInteractions() {
         const hay = row.dataset.search || "";
         row.style.display = (!q || hay.includes(q)) ? "" : "none";
       });
+      if (personClear) personClear.hidden = !searchInput.value;
     };
     searchInput.oninput = (e) => {
       state.searchPerson = e.target.value;
       applyFilter();
     };
     searchInput.onclick = (e) => e.stopPropagation();
+    searchInput.onfocus = (e) => { if (e.target.value) e.target.select(); };
+    if (personClear) {
+      personClear.onclick = (e) => {
+        e.stopPropagation();
+        state.searchPerson = "";
+        searchInput.value = "";
+        applyFilter();
+        searchInput.focus();
+      };
+    }
     applyFilter();
   }
   document.querySelectorAll(".pp-row").forEach(row => {
     row.onclick = () => {
       const id = row.dataset.idperson;
-      state.searchListing = id || row.dataset.name || "";
+      // Fallback auf den Namen, wenn keine ID-Person hinterlegt ist (leer oder "?")
+      const useId = id && id !== "?";
+      state.searchListing = useId ? id : (row.dataset.name || "");
       const input = document.getElementById("search-listing");
       if (input) input.value = state.searchListing;
+      const listClear = document.getElementById("search-listing-clear");
+      if (listClear) listClear.hidden = !state.searchListing;
+      // Dropdown schliessen, damit die einzelnen Buchungen sichtbar werden
+      if (det) { det.open = false; state.ppOpen = false; }
       renderListContent();
       const listEl = document.getElementById("list");
       if (listEl) listEl.scrollIntoView({ behavior: "smooth", block: "start" });

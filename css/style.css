@@ -493,6 +493,34 @@ input:focus, select:focus, textarea:focus {
 }
 .per-person .search-input { margin-top: 12px; }
 
+.search-wrap { position: relative; }
+.per-person .search-wrap { margin-top: 12px; }
+.per-person .search-wrap .search-input { margin-top: 0; }
+.search-wrap .search-input { padding-right: 38px; }
+/* native Clear-Buttons unterdrücken, eigener Button wird genutzt */
+.search-wrap .search-input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+.search-clear {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--bg-elev-2);
+  color: var(--text-dim);
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+.search-clear:hover { color: var(--text); background: var(--border); }
+.search-clear[hidden] { display: none; }
+
 .pp-row { cursor: pointer; transition: background 0.12s; }
 .pp-row:hover { background: var(--bg-elev-2); }
 .pp-name-clickable { color: var(--accent); }
