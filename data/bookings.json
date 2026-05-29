@@ -242,6 +242,35 @@
       ],
       "total": 8,
       "notes": []
+    },
+    {
+      "id": "mpq5utt0bu9k02",
+      "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+      "createdAt": "2026-05-29T00:05:25.477Z",
+      "firstName": "Florian",
+      "lastName": "Bertram",
+      "idPerson": "123456789",
+      "email": "florian.bertram@fhnw.ch",
+      "jahreskurs": "Test",
+      "paymentType": "privat",
+      "items": [
+        {
+          "materialId": "hk-90x60-2.0",
+          "label": "2 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.85,
+          "qty": 1
+        },
+        {
+          "materialId": "hk-90x60-1.5",
+          "label": "1.5 mm",
+          "group": "HK / Holzkarton (90 × 60 cm)",
+          "unitPrice": 4.55,
+          "qty": 15
+        }
+      ],
+      "total": 73.1,
+      "notes": []
     }
   ]
 }
