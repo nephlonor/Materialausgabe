@@ -303,29 +303,6 @@
       ]
     },
     {
-      "id": "mpqketf442bvsz",
-      "deviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
-      "createdAt": "2026-05-29T06:52:52.720Z",
-      "firstName": "Martin",
-      "lastName": "Ausgabe",
-      "idPerson": "1234321",
-      "email": "Martin@Fhnw.ch",
-      "jahreskurs": "Test",
-      "paymentType": "institut",
-      "items": [
-        {
-          "materialId": "gk-80x55-2.0",
-          "label": "2 mm",
-          "group": "GK / Graukarton (80 × 55 cm)",
-          "unitPrice": 2.2,
-          "qty": 6
-        }
-      ],
-      "plates": [],
-      "total": 13.200000000000001,
-      "notes": []
-    },
-    {
       "id": "imp000001valu",
       "deviceId": "import",
       "createdAt": "2026-05-27T09:00:00.000Z",
