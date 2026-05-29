@@ -1334,6 +1334,42 @@
         "notes": [],
         "updatedAt": "2026-05-29T07:08:43.397Z"
       }
+    },
+    {
+      "id": "mpqpn8b1nv6na0",
+      "timestamp": "2026-05-29T09:19:23.341Z",
+      "action": "delete",
+      "bookingId": "mpqketf442bvsz",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpqketf442bvsz",
+        "deviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
+        "createdAt": "2026-05-29T06:52:52.720Z",
+        "firstName": "Martin",
+        "lastName": "Ausgabe",
+        "idPerson": "1234321",
+        "email": "Martin@Fhnw.ch",
+        "jahreskurs": "Test",
+        "paymentType": "institut",
+        "items": [
+          {
+            "materialId": "gk-80x55-2.0",
+            "label": "2 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 2.2,
+            "qty": 6
+          }
+        ],
+        "plates": [],
+        "total": 13.200000000000001,
+        "notes": []
+      }
     }
   ]
 }
