@@ -916,7 +916,7 @@ async function editBooking(id) {
   });
   if (!ok || !patch) return;
   try {
-    await GH.updateBooking(id, state.deviceId, patch, currentActor());
+    await GH.updateBooking(id, state.deviceId, state.profile && state.profile.idPerson, patch, currentActor());
     toast("Gespeichert", "success");
     await refreshBookings();
   } catch (e) {
