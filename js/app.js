@@ -96,13 +96,108 @@ const LS = {
   profile: "ma.profile.v1",
   deviceId: "ma.deviceId.v1",
   lastGuest: "ma.lastGuest.v1",
+  installDismissed: "ma.installDismissed.v1",
 };
+
+// ================= Install / PWA =================
+function isStandalone() {
+  return (
+    (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) ||
+    window.navigator.standalone === true
+  );
+}
+function isIOS() {
+  const ua = window.navigator.userAgent;
+  return /iPad|iPhone|iPod/.test(ua) ||
+    (ua.includes("Mac") && "ontouchend" in document);
+}
+function isAndroid() {
+  return /Android/.test(window.navigator.userAgent);
+}
+
+let deferredInstallPrompt = null;
+
+function hideInstallBanner() {
+  const el = document.getElementById("install-banner");
+  if (el) { el.hidden = true; el.style.display = "none"; el.innerHTML = ""; }
+}
+
+function showInstallBanner() {
+  if (isStandalone()) { hideInstallBanner(); return; }
+  if (localStorage.getItem(LS.installDismissed) === "1") { hideInstallBanner(); return; }
+  const el = document.getElementById("install-banner");
+  if (!el) return;
+
+  if (deferredInstallPrompt) {
+    el.innerHTML = `
+      <div class="ib-body">
+        <div class="ib-title">App installieren</div>
+        <div class="ib-text">Materialausgabe als App auf dem Startbildschirm hinzufügen für schnelleren Zugriff.</div>
+        <div class="ib-actions">
+          <button id="ib-install" class="btn small primary">Installieren</button>
+        </div>
+      </div>
+      <button class="ib-close" id="ib-close" aria-label="Schliessen">×</button>
+    `;
+    el.hidden = false;
+    el.style.display = "flex";
+    document.getElementById("ib-install").onclick = async () => {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      const { outcome } = await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      if (outcome === "accepted") hideInstallBanner();
+      else showInstallBanner();
+    };
+    document.getElementById("ib-close").onclick = () => {
+      localStorage.setItem(LS.installDismissed, "1");
+      hideInstallBanner();
+    };
+    return;
+  }
+
+  if (isIOS()) {
+    el.innerHTML = `
+      <div class="ib-body">
+        <div class="ib-title">Zum Startbildschirm hinzufügen</div>
+        <div class="ib-text">
+          Tippe in Safari auf
+          <svg class="ib-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4m0 0l-4 4m4-4l4 4"/><path d="M4 14v4a2 2 0 002 2h12a2 2 0 002-2v-4"/></svg>
+          „Teilen" und dann
+          <b>„Zum Home-Bildschirm"</b>, um die App zu installieren.
+        </div>
+      </div>
+      <button class="ib-close" id="ib-close" aria-label="Schliessen">×</button>
+    `;
+    el.hidden = false;
+    el.style.display = "flex";
+    document.getElementById("ib-close").onclick = () => {
+      localStorage.setItem(LS.installDismissed, "1");
+      hideInstallBanner();
+    };
+    return;
+  }
+
+  hideInstallBanner();
+}
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  showInstallBanner();
+});
+window.addEventListener("appinstalled", () => {
+  deferredInstallPrompt = null;
+  localStorage.removeItem(LS.installDismissed);
+  hideInstallBanner();
+});
 
 // Boot
 document.addEventListener("DOMContentLoaded", () => {
   loadLocal();
   ensureDeviceId();
   applyPaymentTheme(state.paymentType);
+  showInstallBanner();
   document.getElementById("settings-btn").addEventListener("click", openSettings);
   document.querySelectorAll(".tab").forEach(t => {
     t.addEventListener("click", () => switchView(t.dataset.view));

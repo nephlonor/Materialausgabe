@@ -347,6 +347,52 @@ input:focus, select:focus, textarea:focus {
 }
 .totals-value.totals-institut { color: var(--success); }
 
+#install-banner {
+  margin: 8px 12px 0;
+  padding: 12px 14px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+#install-banner .ib-body { flex: 1; }
+#install-banner .ib-title {
+  font-weight: 600;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+#install-banner .ib-text { color: var(--text-dim); line-height: 1.45; }
+#install-banner .ib-actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+#install-banner .ib-icon {
+  display: inline-block;
+  vertical-align: -3px;
+  width: 16px;
+  height: 16px;
+  margin: 0 2px;
+}
+#install-banner .ib-close {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  flex-shrink: 0;
+}
+#install-banner .ib-close:hover { color: var(--text); }
+
+#install-banner.small { padding: 8px 12px; }
+
 .plate-row {
   display: flex;
   align-items: center;
