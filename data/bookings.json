@@ -1,52 +1,6 @@
 {
   "bookings": [
     {
-      "id": "mppo9mimw46b57",
-      "deviceId": "5bd5b0ee-cafa-4c1b-b818-961a373029bb",
-      "createdAt": "2026-05-28T15:53:02.782Z",
-      "firstName": "Florian",
-      "lastName": "Bertram",
-      "idPerson": "123456789",
-      "email": "florian.bertram@fhnw.ch",
-      "jahreskurs": "Test",
-      "items": [
-        {
-          "materialId": "gk-80x55-3.0",
-          "label": "3 mm",
-          "group": "GK / Graukarton (80 × 55 cm)",
-          "unitPrice": 3.1,
-          "qty": 10
-        }
-      ],
-      "total": 31,
-      "notes": [
-        {
-          "text": "bereits abgebucht (test)",
-          "author": "Florian Bertram",
-          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
-          "createdAt": "2026-05-28T23:32:29.921Z"
-        },
-        {
-          "text": "bereits abgebucht (test)",
-          "author": "Florian Bertram",
-          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
-          "createdAt": "2026-05-28T23:32:36.853Z"
-        },
-        {
-          "text": "bereits abgebucht (test)",
-          "author": "Florian Bertram",
-          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
-          "createdAt": "2026-05-28T23:32:38.289Z"
-        },
-        {
-          "text": "bereits abgebucht (test)",
-          "author": "Florian Bertram",
-          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
-          "createdAt": "2026-05-28T23:32:32.439Z"
-        }
-      ]
-    },
-    {
       "id": "mpq54jb37is0xh",
       "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
       "createdAt": "2026-05-28T23:44:58.815Z",
