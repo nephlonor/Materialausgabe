@@ -7504,7 +7504,15 @@
       ],
       "plates": [],
       "total": 1.5,
-      "notes": []
+      "notes": [
+        {
+          "id": "mpqryo0jonm18l",
+          "text": "testbuchung",
+          "author": "Florian Bertram",
+          "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+          "createdAt": "2026-05-29T10:24:16.147Z"
+        }
+      ]
     }
   ]
 }
