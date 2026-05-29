@@ -1038,10 +1038,6 @@ function renderEdit() {
           <div class="totals-label">Institut</div>
           <div class="totals-value totals-institut">${formatCHF(totals.institut)}</div>
         </div>
-        <div class="totals-cell">
-          <div class="totals-label">Gesamt</div>
-          <div class="totals-value">${formatCHF(totals.privat + totals.institut)}</div>
-        </div>
       </div>
     </div>
     <div id="own-list" class="booking-list"></div>
