@@ -13,11 +13,11 @@ const PAYMENT_LABEL = { privat: "Privat", institut: "Institut" };
 
 function platesCardHtml(plates, opts = {}) {
   const idPrefix = opts.idPrefix || "p";
-  const hint = opts.hint || "Dies ist keine automatische Bestellung, hier nur bestellte Platten verbuchen.";
+  const hint = opts.hint === undefined ? "Dies ist keine automatische Bestellung, hier nur bestellte Platten verbuchen." : opts.hint;
   return `
     <div class="card plates-card">
       <h2>Platten Zuschnitte</h2>
-      <p class="muted">${esc(hint)}</p>
+      ${hint ? `<p class="muted">${esc(hint)}</p>` : ""}
       <div id="${idPrefix}-list">
         ${plates.map((t, i) => plateRowHtml(t, i, idPrefix)).join("")}
       </div>
@@ -877,7 +877,7 @@ async function editBooking(id) {
     (hasPlates ? platesCardHtml(editPlates.plates, {
       idPrefix: "p-edit",
       noAdd: true,
-      hint: "Bestehende Zuschnitte können angepasst oder entfernt werden. Neue Zuschnitte sind nur bei neuen Buchungen möglich.",
+      hint: "",
     }) : "") +
     `<div class="payment-row" style="margin-top:10px">
        <span class="lbl">Bezahlt durch</span>
