@@ -432,7 +432,7 @@ async function submitGuestBooking() {
   } catch {}
   const wrap = document.createElement("div");
   wrap.innerHTML = `
-    <p class="muted" style="margin-top:0">Daten des Gastes eingeben. Nach der Bestätigung kann die Buchung <b>nicht mehr angepasst</b> werden.</p>
+    <p class="muted" style="margin-top:0">Daten des Gastes eingeben. Nach der Bestätigung kann die Buchung nur noch von der angegebenen Person angepasst werden, sofern ID-Person korrekt angegeben wird.</p>
     <label class="field"><span>Vorname *</span><input id="g-first" type="text" autocomplete="off" value="${esc(prefill.firstName || "")}" /></label>
     <label class="field"><span>Nachname *</span><input id="g-last" type="text" autocomplete="off" value="${esc(prefill.lastName || "")}" /></label>
     <label class="field"><span>ID-Person *</span><input id="g-id" type="text" inputmode="numeric" autocomplete="off" value="${esc(prefill.idPerson || "")}" /></label>
