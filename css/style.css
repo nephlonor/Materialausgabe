@@ -5,8 +5,8 @@
   --border: #262c34;
   --text: #e6edf3;
   --text-dim: #8b949e;
-  --accent: #4f8cff;
-  --accent-hov: #6aa0ff;
+  --accent: #3fb950;
+  --accent-hov: #5fcf6f;
   --danger: #f85149;
   --success: #3fb950;
   --warning: #d29922;
@@ -17,8 +17,21 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
+body[data-pt="privat"] {
+  --accent: #3fb950;
+  --accent-hov: #5fcf6f;
+}
+body[data-pt="institut"] {
+  --accent: #4f8cff;
+  --accent-hov: #6aa0ff;
+}
+
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; height: 100%; }
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  touch-action: pan-x pan-y;
+  -webkit-text-size-adjust: 100%;
+}
 body {
   background: var(--bg);
   color: var(--text);

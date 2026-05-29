@@ -19,11 +19,16 @@ function paymentToggleHtml(current, idPrefix = "pt") {
   `;
 }
 
+function applyPaymentTheme(pt) {
+  document.body.setAttribute("data-pt", pt === "institut" ? "institut" : "privat");
+}
+
 function bindPaymentToggle(container, onChange) {
   container.querySelectorAll(".toggle-group button[data-pt]").forEach(btn => {
     btn.onclick = () => {
       const group = btn.closest(".toggle-group");
       group.querySelectorAll("button[data-pt]").forEach(b => b.classList.toggle("active", b === btn));
+      applyPaymentTheme(btn.dataset.pt);
       onChange(btn.dataset.pt);
     };
   });
@@ -38,6 +43,7 @@ const LS = {
 document.addEventListener("DOMContentLoaded", () => {
   loadLocal();
   ensureDeviceId();
+  applyPaymentTheme(state.paymentType);
   document.getElementById("settings-btn").addEventListener("click", openSettings);
   document.querySelectorAll(".tab").forEach(t => {
     t.addEventListener("click", () => switchView(t.dataset.view));
