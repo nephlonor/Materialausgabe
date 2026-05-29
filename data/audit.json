@@ -1370,6 +1370,44 @@
         "total": 13.200000000000001,
         "notes": []
       }
+    },
+    {
+      "id": "mpqpne8c3hf725",
+      "timestamp": "2026-05-29T09:19:31.020Z",
+      "action": "delete",
+      "bookingId": "mpq6qietmavg0z",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpq6qietmavg0z",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-29T00:30:03.701Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "paymentType": "institut",
+        "items": [],
+        "plates": [
+          "MDF 10mm"
+        ],
+        "total": 0,
+        "notes": [
+          {
+            "id": "mpqkcehg0mpz96",
+            "text": "6B",
+            "author": "Martin Ausgabe",
+            "authorDeviceId": "cb7ebdc8-9055-485e-b4cd-6d33ceae9e7c",
+            "createdAt": "2026-05-29T06:51:00.052Z"
+          }
+        ]
+      }
     }
   ]
 }
