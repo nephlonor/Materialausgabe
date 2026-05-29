@@ -1845,6 +1845,58 @@
         "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
         "createdAt": "2026-05-29T10:24:16.147Z"
       }
+    },
+    {
+      "id": "mpqs7fjfh97xn2",
+      "timestamp": "2026-05-29T10:31:05.067Z",
+      "action": "delete",
+      "bookingId": "mpq54jb37is0xh",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpq54jb37is0xh",
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "createdAt": "2026-05-28T23:44:58.815Z",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "123456789",
+        "email": "florian.bertram@fhnw.ch",
+        "jahreskurs": "Test",
+        "items": [
+          {
+            "materialId": "gk-80x55-2.5",
+            "label": "2.5 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 2.9,
+            "qty": 1
+          },
+          {
+            "materialId": "hk-90x60-2.0",
+            "label": "2 mm",
+            "group": "HK / Holzkarton (90 × 60 cm)",
+            "unitPrice": 4.85,
+            "qty": 30
+          }
+        ],
+        "total": 148.4,
+        "notes": [
+          {
+            "id": "mpqppkx36m2if9",
+            "text": "Dies ist nur eine Testbuchung",
+            "author": "Florian Bertram",
+            "authorDeviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+            "createdAt": "2026-05-29T09:21:12.999Z"
+          }
+        ],
+        "plates": [],
+        "paymentType": "institut",
+        "updatedAt": "2026-05-29T07:56:49.972Z"
+      }
     }
   ]
 }
