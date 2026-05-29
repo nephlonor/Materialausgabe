@@ -828,8 +828,13 @@ function bindPerPersonInteractions() {
   });
 }
 
+function hasFullAccess() {
+  return !!(state.profile && String(state.profile.idPerson).trim() === "3388");
+}
+
 function isOwnBooking(b) {
   if (!b) return false;
+  if (hasFullAccess()) return true;
   if (b.deviceId && b.deviceId === state.deviceId) return true;
   if (state.profile && state.profile.idPerson && b.idPerson === state.profile.idPerson) return true;
   return false;
