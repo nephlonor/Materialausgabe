@@ -28,7 +28,7 @@ function platesCardHtml(plates, opts = {}) {
 function plateRowHtml(text, i, idPrefix) {
   return `
     <div class="plate-row" data-plate-row="${idPrefix}-${i}">
-      <input type="text" data-plate-input="${idPrefix}-${i}" value="${esc(text)}" placeholder="z.B. GK 1mm, 50×30 cm" />
+      <input type="text" data-plate-input="${idPrefix}-${i}" value="${esc(text)}" placeholder="z.B. MDF 10mm, 100x60 cm" />
       <button type="button" class="plate-del" data-plate-del="${idPrefix}-${i}" title="Entfernen">×</button>
     </div>
   `;
@@ -856,7 +856,7 @@ async function editBooking(id) {
   const b = state.bookings.find(x => x.id === id);
   if (!b) return;
   let editedPaymentType = b.paymentType || "privat";
-  const editPlates = { plates: (Array.isArray(b.plates) && b.plates.length ? [...b.plates] : [""]) };
+  const existingPlates = Array.isArray(b.plates) ? b.plates.filter(Boolean) : [];
   const wrap = document.createElement("div");
   wrap.innerHTML = `<p class="muted" style="margin-top:0">Mengen anpassen (0 = entfernen)</p>` +
     b.items.map((it, i) => `
@@ -872,7 +872,14 @@ async function editBooking(id) {
         </div>
       </div>
     `).join("") +
-    platesCardHtml(editPlates.plates, { idPrefix: "p-edit" }) +
+    (existingPlates.length ? `
+      <div class="card plates-card">
+        <h2>Platten Zuschnitte</h2>
+        <p class="muted">Können bei bestehenden Buchungen nicht mehr geändert werden.</p>
+        <ul style="margin:0; padding-left:18px; font-size:13px">
+          ${existingPlates.map(p => `<li>${esc(p)}</li>`).join("")}
+        </ul>
+      </div>` : "") +
     `<div class="payment-row" style="margin-top:10px">
        <span class="lbl">Bezahlt durch</span>
        ${paymentToggleHtml(editedPaymentType, "pt-edit")}
@@ -895,7 +902,6 @@ async function editBooking(id) {
     inp.oninput = () => { newQtys[+inp.dataset.i] = Math.max(0, parseInt(inp.value || "0", 10)); };
   });
   bindPaymentToggle(wrap, (pt) => { editedPaymentType = pt; });
-  bindPlatesControl(wrap, editPlates, "p-edit");
 
   let patch = null;
   const ok = await modal({
@@ -906,11 +912,9 @@ async function editBooking(id) {
       const newItems = b.items
         .map((it, i) => ({ ...it, qty: newQtys[i] }))
         .filter(it => it.qty > 0);
-      const newPlates = platesNonEmpty(editPlates.plates);
-      if (!newItems.length && !newPlates.length) { toast("Mindestens eine Position oder ein Zuschnitt nötig (oder löschen)", "error"); return false; }
+      if (!newItems.length && !existingPlates.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
       patch = {
         items: newItems,
-        plates: newPlates,
         total: newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0),
         paymentType: editedPaymentType,
       };
