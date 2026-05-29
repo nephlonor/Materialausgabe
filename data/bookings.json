@@ -343,14 +343,15 @@
           "label": "2.5 mm",
           "group": "GK / Graukarton (80 × 55 cm)",
           "unitPrice": 2.9,
-          "qty": 10
+          "qty": 8
         }
       ],
       "plates": [
         "MDF 5mm, 100x50"
       ],
-      "total": 32,
-      "notes": []
+      "total": 26.2,
+      "notes": [],
+      "updatedAt": "2026-05-29T07:08:43.397Z"
     }
   ]
 }
