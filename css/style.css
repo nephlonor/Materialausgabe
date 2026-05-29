@@ -345,6 +345,54 @@ input:focus, select:focus, textarea:focus {
 }
 .totals-value.totals-institut { color: var(--success); }
 
+.plate-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.plate-row input { flex: 1; }
+.plate-del {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  width: 36px; height: 36px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+.plate-del:hover { color: var(--danger); border-color: var(--danger); }
+
+.card-plates {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border);
+}
+.card-plates-title {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.card-plates ul { margin: 0; padding-left: 18px; font-size: 13px; }
+
+.confirm-plates {
+  margin: 6px 0 10px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--border);
+}
+.confirm-plates-title {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
 .toggle-group {
   display: inline-flex;
   background: var(--bg-elev-2);

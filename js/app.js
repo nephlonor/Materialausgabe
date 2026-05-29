@@ -4,13 +4,68 @@ const state = {
   deviceId: null,       // automatisch generierte ID pro Browser
   view: "book",         // book | list | edit
   cart: {},             // { materialId: qty }
+  plates: [""],         // Platten Zuschnitte (Freitext-Liste)
   paymentType: "privat",// "privat" | "institut"
   bookings: [],         // alle Buchungen vom Server
 };
 
 const PAYMENT_LABEL = { privat: "Privat", institut: "Institut" };
 
-function paymentToggleHtml(current, idPrefix = "pt") {
+function platesCardHtml(plates, opts = {}) {
+  const idPrefix = opts.idPrefix || "p";
+  return `
+    <div class="card plates-card">
+      <h2>Platten Zuschnitte</h2>
+      <p class="muted">Dies ist keine automatische Bestellung, hier nur bestellte Platten verbuchen.</p>
+      <div id="${idPrefix}-list">
+        ${plates.map((t, i) => plateRowHtml(t, i, idPrefix)).join("")}
+      </div>
+      <button type="button" class="btn block" data-plate-add="${idPrefix}" style="margin-top:8px">+ Weiteren Zuschnitt</button>
+    </div>
+  `;
+}
+
+function plateRowHtml(text, i, idPrefix) {
+  return `
+    <div class="plate-row" data-plate-row="${idPrefix}-${i}">
+      <input type="text" data-plate-input="${idPrefix}-${i}" value="${esc(text)}" placeholder="z.B. GK 1mm, 50×30 cm" />
+      <button type="button" class="plate-del" data-plate-del="${idPrefix}-${i}" title="Entfernen">×</button>
+    </div>
+  `;
+}
+
+function bindPlatesControl(container, store, idPrefix, onChange) {
+  const listEl = container.querySelector(`#${idPrefix}-list`);
+  const wireRow = () => {
+    listEl.querySelectorAll(`[data-plate-input^="${idPrefix}-"]`).forEach(inp => {
+      inp.oninput = () => {
+        const i = +inp.dataset.plateInput.split("-").pop();
+        store.plates[i] = inp.value;
+        if (onChange) onChange();
+      };
+    });
+    listEl.querySelectorAll(`[data-plate-del^="${idPrefix}-"]`).forEach(btn => {
+      btn.onclick = () => {
+        const i = +btn.dataset.plateDel.split("-").pop();
+        store.plates.splice(i, 1);
+        if (!store.plates.length) store.plates.push("");
+        rerender();
+      };
+    });
+  };
+  const rerender = () => {
+    listEl.innerHTML = store.plates.map((t, i) => plateRowHtml(t, i, idPrefix)).join("");
+    wireRow();
+    if (onChange) onChange();
+  };
+  const addBtn = container.querySelector(`[data-plate-add="${idPrefix}"]`);
+  if (addBtn) addBtn.onclick = () => { store.plates.push(""); rerender(); };
+  wireRow();
+}
+
+function platesNonEmpty(plates) {
+  return (plates || []).map(p => (p || "").trim()).filter(Boolean);
+}
   return `
     <div class="toggle-group" role="tablist">
       <button type="button" class="${current === "privat" ? "active" : ""}" data-pt="privat" id="${idPrefix}-privat">Privat</button>
@@ -282,6 +337,7 @@ function renderBook() {
     </div>
     ${warnHtml}
     ${groupsHtml}
+    ${platesCardHtml(state.plates, { idPrefix: "p-cart" })}
     <div class="summary-bar">
       <div class="payment-row">
         <span class="lbl">Bezahlt durch</span>
@@ -293,6 +349,7 @@ function renderBook() {
   `;
   main.querySelectorAll(".qty-control").forEach(c => bindQty(c));
   bindPaymentToggle(main, (pt) => { state.paymentType = pt; });
+  bindPlatesControl(main, state, "p-cart", updateTotal);
   document.getElementById("book-btn").onclick = submitBooking;
   document.getElementById("guest-btn").onclick = submitGuestBooking;
   updateTotal();
@@ -348,12 +405,13 @@ function updateTotal() {
   const el = document.getElementById("total");
   if (el) el.textContent = formatCHF(t);
   const btn = document.getElementById("book-btn");
-  if (btn) btn.disabled = cartItemCount() === 0;
+  if (btn) btn.disabled = cartItemCount() === 0 && platesNonEmpty(state.plates).length === 0;
 }
 
 async function submitGuestBooking() {
-  if (cartItemCount() === 0) {
-    toast("Bitte zuerst Materialien wählen", "error");
+  const plates = platesNonEmpty(state.plates);
+  if (cartItemCount() === 0 && plates.length === 0) {
+    toast("Bitte zuerst Materialien oder Zuschnitte wählen", "error");
     return;
   }
   if (!GH.hasToken()) {
@@ -405,9 +463,13 @@ async function submitGuestBooking() {
   const confirmWrap = document.createElement("div");
   confirmWrap.innerHTML = `
     <p class="muted" style="margin-top:0">Gast: <b>${esc(guest.firstName)} ${esc(guest.lastName)}</b> · ID ${esc(guest.idPerson)} · ${esc(guest.jahreskurs)}</p>
-    <ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
+    ${items.length ? `<ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
       ${items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} = ${formatCHF(i.qty * i.unitPrice)}</li>`).join("")}
-    </ul>
+    </ul>` : ""}
+    ${plates.length ? `<div class="confirm-plates"><div class="confirm-plates-title">Platten Zuschnitte</div>
+      <ul style="margin:0 0 10px; padding-left:18px; font-size:13px">
+        ${plates.map(p => `<li>${esc(p)}</li>`).join("")}
+      </ul></div>` : ""}
     <div class="payment-row" style="margin:10px 0; padding-top:10px; border-top:1px solid var(--border)">
       <span class="lbl">Bezahlt durch</span>
       ${paymentToggleHtml(guestPaymentType, "pt-guest-confirm")}
@@ -428,6 +490,7 @@ async function submitGuestBooking() {
     ...guest,
     paymentType: guestPaymentType,
     items,
+    plates,
     total,
     notes: [],
   };
@@ -435,6 +498,7 @@ async function submitGuestBooking() {
     await GH.addBooking(booking, currentActor());
     toast("Gastbuchung gespeichert", "success");
     state.cart = {};
+    state.plates = [""];
     await refreshBookings();
     renderBook();
   } catch (e) {
@@ -444,7 +508,8 @@ async function submitGuestBooking() {
 }
 
 async function submitBooking() {
-  if (cartItemCount() === 0) return;
+  const plates = platesNonEmpty(state.plates);
+  if (cartItemCount() === 0 && plates.length === 0) return;
   if (!GH.hasToken()) {
     toast("Buchungs-Token fehlt – siehe Hinweis oben", "error");
     return;
@@ -462,9 +527,13 @@ async function submitBooking() {
 
   const wrap = document.createElement("div");
   wrap.innerHTML = `
-    <ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
+    ${items.length ? `<ul style="margin:0 0 10px; padding-left:18px; font-size:14px">
       ${items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} = ${formatCHF(i.qty * i.unitPrice)}</li>`).join("")}
-    </ul>
+    </ul>` : ""}
+    ${plates.length ? `<div class="confirm-plates"><div class="confirm-plates-title">Platten Zuschnitte</div>
+      <ul style="margin:0 0 10px; padding-left:18px; font-size:13px">
+        ${plates.map(p => `<li>${esc(p)}</li>`).join("")}
+      </ul></div>` : ""}
     <div class="payment-row" style="margin:10px 0; padding-top:10px; border-top:1px solid var(--border)">
       <span class="lbl">Bezahlt durch</span>
       ${paymentToggleHtml(state.paymentType, "pt-confirm")}
@@ -491,6 +560,7 @@ async function submitBooking() {
     jahreskurs: state.profile.jahreskurs,
     paymentType: state.paymentType,
     items,
+    plates,
     total,
     notes: [],
   };
@@ -498,6 +568,7 @@ async function submitBooking() {
     await GH.addBooking(booking, currentActor());
     toast("Buchung gespeichert", "success");
     state.cart = {};
+    state.plates = [""];
     await refreshBookings();
     renderBook();
   } catch (e) {
@@ -610,6 +681,12 @@ function bookingCardHtml(b, opts = {}) {
   const pt = b.paymentType || "privat";
   tags.push(`<span class="tag tag-pt tag-pt-${pt}">${esc(PAYMENT_LABEL[pt] || pt)}</span>`);
   const clickable = own && opts.clickToEdit;
+  const plates = Array.isArray(b.plates) ? b.plates.filter(Boolean) : [];
+  const platesHtml = plates.length ? `
+    <div class="card-plates">
+      <div class="card-plates-title">Platten Zuschnitte</div>
+      <ul>${plates.map(p => `<li>${esc(p)}</li>`).join("")}</ul>
+    </div>` : "";
   return `
     <div class="booking-item ${own ? "own" : ""} ${b.guest ? "guest" : ""} ${clickable ? "clickable" : ""}"
          ${clickable ? `data-direct-edit="${esc(b.id)}"` : ""}>
@@ -619,9 +696,10 @@ function bookingCardHtml(b, opts = {}) {
         <span class="when">${esc(when)}</span>
       </div>
       <div class="meta">${esc(b.jahreskurs)} · ID ${esc(b.idPerson)}</div>
-      <ul>
+      ${b.items && b.items.length ? `<ul>
         ${b.items.map(i => `<li>${esc(i.group)} — ${esc(i.label)} × ${i.qty} <span class="muted">(${formatCHF(i.qty * i.unitPrice)})</span></li>`).join("")}
-      </ul>
+      </ul>` : ""}
+      ${platesHtml}
       ${notesHtml}
       <div class="foot">
         <span class="sum">${formatCHF(b.total)}</span>
@@ -759,6 +837,7 @@ async function editBooking(id) {
   const b = state.bookings.find(x => x.id === id);
   if (!b) return;
   let editedPaymentType = b.paymentType || "privat";
+  const editPlates = { plates: (Array.isArray(b.plates) && b.plates.length ? [...b.plates] : [""]) };
   const wrap = document.createElement("div");
   wrap.innerHTML = `<p class="muted" style="margin-top:0">Mengen anpassen (0 = entfernen)</p>` +
     b.items.map((it, i) => `
@@ -774,6 +853,7 @@ async function editBooking(id) {
         </div>
       </div>
     `).join("") +
+    platesCardHtml(editPlates.plates, { idPrefix: "p-edit" }) +
     `<div class="payment-row" style="margin-top:10px">
        <span class="lbl">Bezahlt durch</span>
        ${paymentToggleHtml(editedPaymentType, "pt-edit")}
@@ -796,6 +876,7 @@ async function editBooking(id) {
     inp.oninput = () => { newQtys[+inp.dataset.i] = Math.max(0, parseInt(inp.value || "0", 10)); };
   });
   bindPaymentToggle(wrap, (pt) => { editedPaymentType = pt; });
+  bindPlatesControl(wrap, editPlates, "p-edit");
 
   let patch = null;
   const ok = await modal({
@@ -806,9 +887,11 @@ async function editBooking(id) {
       const newItems = b.items
         .map((it, i) => ({ ...it, qty: newQtys[i] }))
         .filter(it => it.qty > 0);
-      if (!newItems.length) { toast("Mindestens eine Position nötig (oder löschen)", "error"); return false; }
+      const newPlates = platesNonEmpty(editPlates.plates);
+      if (!newItems.length && !newPlates.length) { toast("Mindestens eine Position oder ein Zuschnitt nötig (oder löschen)", "error"); return false; }
       patch = {
         items: newItems,
+        plates: newPlates,
         total: newItems.reduce((s, it) => s + it.qty * it.unitPrice, 0),
         paymentType: editedPaymentType,
       };
