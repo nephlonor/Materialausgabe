@@ -1598,6 +1598,48 @@
         "total": 23.299999999999997,
         "notes": []
       }
+    },
+    {
+      "id": "mpqpodv7ginvdh",
+      "timestamp": "2026-05-29T09:20:17.203Z",
+      "action": "delete",
+      "bookingId": "mpq55cl6do1u1y",
+      "actor": {
+        "deviceId": "909d8bb5-f3b0-42fc-8ce9-18067a1a7f37",
+        "firstName": "Florian",
+        "lastName": "Bertram",
+        "idPerson": "3388",
+        "email": "florian.bertram@fhnw.ch"
+      },
+      "booking": {
+        "id": "mpq55cl6do1u1y",
+        "deviceId": "guest",
+        "guest": true,
+        "createdAt": "2026-05-28T23:45:36.762Z",
+        "firstName": "Jonnie",
+        "lastName": "Testy",
+        "idPerson": "5158864",
+        "email": "jonny@test.ch",
+        "jahreskurs": "test",
+        "items": [
+          {
+            "materialId": "gk-80x55-2.0",
+            "label": "2 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 2.2,
+            "qty": 2
+          },
+          {
+            "materialId": "gk-80x55-2.5",
+            "label": "2.5 mm",
+            "group": "GK / Graukarton (80 × 55 cm)",
+            "unitPrice": 2.9,
+            "qty": 2
+          }
+        ],
+        "total": 10.2,
+        "notes": []
+      }
     }
   ]
 }
