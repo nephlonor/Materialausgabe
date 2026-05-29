@@ -66,6 +66,8 @@ function bindPlatesControl(container, store, idPrefix, onChange) {
 function platesNonEmpty(plates) {
   return (plates || []).map(p => (p || "").trim()).filter(Boolean);
 }
+
+function paymentToggleHtml(current, idPrefix = "pt") {
   return `
     <div class="toggle-group" role="tablist">
       <button type="button" class="${current === "privat" ? "active" : ""}" data-pt="privat" id="${idPrefix}-privat">Privat</button>
